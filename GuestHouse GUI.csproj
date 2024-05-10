@@ -113,6 +113,7 @@
     <Compile Include="DashBoard.Designer.cs">
       <DependentUpon>DashBoard.cs</DependentUpon>
     </Compile>
+    <Compile Include="GuestList.cs" />
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -13,6 +13,8 @@ namespace GuestHouse_GUI
 {
     public partial class Customers : Form
     {
+        int track = 0;
+        Guest[] guest;
         public Customers()
         {
             InitializeComponent();
@@ -21,13 +23,22 @@ namespace GuestHouse_GUI
 
         private void Customers_Load(object sender, EventArgs e)
         {
+            if (guest!=null&&guest.Length > track)
+            {
+                for (int i = 0; i < guest.Length; i++)
+                {
+                    if (guest[i].status == "Pending")
+                    {
 
+                    }
+                }
+            }
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=NESSI-G\SQL2022;Initial Catalog=GuestHouseDb;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         private void showCustomers()
         {
             Con.Open();
-            string Query = "select * from CustomerTbl";
+            string Query = "select * from Guests";
             SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
@@ -52,13 +63,8 @@ namespace GuestHouse_GUI
             {
                 try
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into CustomerTbl(CusName,CusPhone,CusGen,CusDOB) values(@CN,@CP,@CG, @CD)", Con);
-                    cmd.Parameters.AddWithValue("@CN", CusNameTb.Text);
-                    cmd.Parameters.AddWithValue("@CP", CusPhoneTb.Text);
-                    cmd.Parameters.AddWithValue("@CG", CusGenCb.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@CD", CusDOB.Value.Date);
-                    cmd.ExecuteNonQuery();
+                    guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(), CusGenCb.SelectedItem.ToString());
+
                     MessageBox.Show("Customer Saved");
                     Con.Close();
                     showCustomers();
@@ -181,6 +187,11 @@ namespace GuestHouse_GUI
             Login obj = new Login();
             obj.Show();
             this.Hide();
+        }
+
+        private void pictureBox13_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

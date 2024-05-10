@@ -24,7 +24,7 @@ namespace GuestHouse_GUI
             obj.Show();
             this.Hide();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=NESSI-G\SQL2022;Initial Catalog=GuestHouseDb;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         private void BookBtn_Click(object sender, EventArgs e)
         {
             if(UNameTb.Text == "" || PasswordTb.Text == "")
