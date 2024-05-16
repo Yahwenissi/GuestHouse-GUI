@@ -7,15 +7,6 @@ using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
 
 
-public class NewGuest
-{
-    const string status="pending";
-        string fullName,phoneNum,dob,gender,Checkoutdate,Checkindate;
-        
-
-        
-    
-}
 
 
 
