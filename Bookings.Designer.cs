@@ -29,19 +29,27 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Roomnumcb = new System.Windows.Forms.ComboBox();
             this.bookdelbtn = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
-            this.RTypeCb = new System.Windows.Forms.ComboBox();
             this.nametb = new System.Windows.Forms.TextBox();
             this.BookingDGV = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phonenum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.checkOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Roomnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Roomtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Floor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
@@ -66,16 +74,6 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phonenum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkInDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.checkOutDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Roomnum = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Roomtype = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Floor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TotalPrice = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookingDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -93,12 +91,10 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.Roomnumcb);
             this.panel2.Controls.Add(this.bookdelbtn);
             this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.RTypeCb);
             this.panel2.Controls.Add(this.nametb);
             this.panel2.Controls.Add(this.BookingDGV);
             this.panel2.Location = new System.Drawing.Point(161, 1);
@@ -106,23 +102,12 @@
             this.panel2.Size = new System.Drawing.Size(1241, 833);
             this.panel2.TabIndex = 129;
             // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.BackColor = System.Drawing.Color.White;
-            this.label9.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(456, 245);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(57, 25);
-            this.label9.TabIndex = 151;
-            this.label9.Text = "Type";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(259, 245);
+            this.label8.Location = new System.Drawing.Point(361, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(142, 25);
             this.label8.TabIndex = 150;
@@ -136,7 +121,7 @@
             "Basic",
             "Standard",
             "VIP"});
-            this.Roomnumcb.Location = new System.Drawing.Point(264, 273);
+            this.Roomnumcb.Location = new System.Drawing.Point(509, 254);
             this.Roomnumcb.Name = "Roomnumcb";
             this.Roomnumcb.Size = new System.Drawing.Size(166, 32);
             this.Roomnumcb.TabIndex = 149;
@@ -164,30 +149,16 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.White;
             this.label7.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(41, 245);
+            this.label7.Location = new System.Drawing.Point(62, 261);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 25);
             this.label7.TabIndex = 145;
             this.label7.Text = "Name";
             // 
-            // RTypeCb
-            // 
-            this.RTypeCb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
-            this.RTypeCb.FormattingEnabled = true;
-            this.RTypeCb.Items.AddRange(new object[] {
-            "Basic",
-            "Standard",
-            "VIP"});
-            this.RTypeCb.Location = new System.Drawing.Point(461, 273);
-            this.RTypeCb.Name = "RTypeCb";
-            this.RTypeCb.Size = new System.Drawing.Size(182, 32);
-            this.RTypeCb.TabIndex = 103;
-            this.RTypeCb.SelectionChangeCommitted += new System.EventHandler(this.RTypeCb_SelectionChangeCommitted);
-            // 
             // nametb
             // 
             this.nametb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nametb.Location = new System.Drawing.Point(46, 273);
+            this.nametb.Location = new System.Drawing.Point(133, 251);
             this.nametb.Name = "nametb";
             this.nametb.Size = new System.Drawing.Size(178, 32);
             this.nametb.TabIndex = 130;
@@ -196,17 +167,17 @@
             // 
             this.BookingDGV.AllowUserToAddRows = false;
             this.BookingDGV.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.BookingDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.BookingDGV.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.BookingDGV.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Raised;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.BookingDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.BookingDGV.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.BookingDGV.ColumnHeadersHeight = 37;
             this.BookingDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.BookingDGV.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -220,14 +191,14 @@
             this.Roomtype,
             this.Floor,
             this.TotalPrice});
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.BookingDGV.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.BookingDGV.DefaultCellStyle = dataGridViewCellStyle3;
             this.BookingDGV.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnKeystroke;
             this.BookingDGV.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.BookingDGV.Location = new System.Drawing.Point(18, 331);
@@ -260,6 +231,76 @@
             this.BookingDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Black;
             this.BookingDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.BookingDGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.BookingDGV_CellMouseClick);
+            // 
+            // FullName
+            // 
+            this.FullName.HeaderText = "Full Name";
+            this.FullName.MinimumWidth = 6;
+            this.FullName.Name = "FullName";
+            this.FullName.ReadOnly = true;
+            // 
+            // Age
+            // 
+            this.Age.HeaderText = "Age";
+            this.Age.MinimumWidth = 6;
+            this.Age.Name = "Age";
+            this.Age.ReadOnly = true;
+            // 
+            // Gender
+            // 
+            this.Gender.HeaderText = "Gender";
+            this.Gender.MinimumWidth = 6;
+            this.Gender.Name = "Gender";
+            this.Gender.ReadOnly = true;
+            // 
+            // Phonenum
+            // 
+            this.Phonenum.HeaderText = "Phone Number";
+            this.Phonenum.MinimumWidth = 6;
+            this.Phonenum.Name = "Phonenum";
+            this.Phonenum.ReadOnly = true;
+            // 
+            // checkInDate
+            // 
+            this.checkInDate.HeaderText = "Check In Date";
+            this.checkInDate.MinimumWidth = 6;
+            this.checkInDate.Name = "checkInDate";
+            this.checkInDate.ReadOnly = true;
+            // 
+            // checkOutDate
+            // 
+            this.checkOutDate.HeaderText = "Check Out Date";
+            this.checkOutDate.MinimumWidth = 6;
+            this.checkOutDate.Name = "checkOutDate";
+            this.checkOutDate.ReadOnly = true;
+            // 
+            // Roomnum
+            // 
+            this.Roomnum.HeaderText = "Room Number";
+            this.Roomnum.MinimumWidth = 6;
+            this.Roomnum.Name = "Roomnum";
+            this.Roomnum.ReadOnly = true;
+            // 
+            // Roomtype
+            // 
+            this.Roomtype.HeaderText = "Type";
+            this.Roomtype.MinimumWidth = 6;
+            this.Roomtype.Name = "Roomtype";
+            this.Roomtype.ReadOnly = true;
+            // 
+            // Floor
+            // 
+            this.Floor.HeaderText = "Floor";
+            this.Floor.MinimumWidth = 6;
+            this.Floor.Name = "Floor";
+            this.Floor.ReadOnly = true;
+            // 
+            // TotalPrice
+            // 
+            this.TotalPrice.HeaderText = "Total Price";
+            this.TotalPrice.MinimumWidth = 6;
+            this.TotalPrice.Name = "TotalPrice";
+            this.TotalPrice.ReadOnly = true;
             // 
             // guna2Button1
             // 
@@ -499,76 +540,6 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // FullName
-            // 
-            this.FullName.HeaderText = "Full Name";
-            this.FullName.MinimumWidth = 6;
-            this.FullName.Name = "FullName";
-            this.FullName.ReadOnly = true;
-            // 
-            // Age
-            // 
-            this.Age.HeaderText = "Age";
-            this.Age.MinimumWidth = 6;
-            this.Age.Name = "Age";
-            this.Age.ReadOnly = true;
-            // 
-            // Gender
-            // 
-            this.Gender.HeaderText = "Gender";
-            this.Gender.MinimumWidth = 6;
-            this.Gender.Name = "Gender";
-            this.Gender.ReadOnly = true;
-            // 
-            // Phonenum
-            // 
-            this.Phonenum.HeaderText = "Phone Number";
-            this.Phonenum.MinimumWidth = 6;
-            this.Phonenum.Name = "Phonenum";
-            this.Phonenum.ReadOnly = true;
-            // 
-            // checkInDate
-            // 
-            this.checkInDate.HeaderText = "Check In Date";
-            this.checkInDate.MinimumWidth = 6;
-            this.checkInDate.Name = "checkInDate";
-            this.checkInDate.ReadOnly = true;
-            // 
-            // checkOutDate
-            // 
-            this.checkOutDate.HeaderText = "Check Out Date";
-            this.checkOutDate.MinimumWidth = 6;
-            this.checkOutDate.Name = "checkOutDate";
-            this.checkOutDate.ReadOnly = true;
-            // 
-            // Roomnum
-            // 
-            this.Roomnum.HeaderText = "Room Number";
-            this.Roomnum.MinimumWidth = 6;
-            this.Roomnum.Name = "Roomnum";
-            this.Roomnum.ReadOnly = true;
-            // 
-            // Roomtype
-            // 
-            this.Roomtype.HeaderText = "Type";
-            this.Roomtype.MinimumWidth = 6;
-            this.Roomtype.Name = "Roomtype";
-            this.Roomtype.ReadOnly = true;
-            // 
-            // Floor
-            // 
-            this.Floor.HeaderText = "Floor";
-            this.Floor.MinimumWidth = 6;
-            this.Floor.Name = "Floor";
-            this.Floor.ReadOnly = true;
-            // 
-            // TotalPrice
-            // 
-            this.TotalPrice.HeaderText = "Total Price";
-            this.TotalPrice.MinimumWidth = 6;
-            this.TotalPrice.Name = "TotalPrice";
-            this.TotalPrice.ReadOnly = true;
-            // 
             // Bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -644,9 +615,7 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2DataGridView BookingDGV;
-        private System.Windows.Forms.ComboBox RTypeCb;
         private Guna.UI2.WinForms.Guna2Button bookdelbtn;
-        private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.ComboBox Roomnumcb;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;

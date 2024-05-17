@@ -76,7 +76,7 @@ namespace GuestHouse_GUI
 
                 Program.guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(), CusGenCb.SelectedItem.ToString());
                 track += 1;
-                MessageBox.Show("Customer Saved");
+             //   MessageBox.Show("Customer Saved");
                 loadtable();
             }
         }

@@ -161,7 +161,7 @@ public class Guest
             if (book == null || book.Guest == null || book.Room == null)
             {
                 // Handle the case where book or its properties are null
-                Console.WriteLine("Invalid booking information.");
+              MessageBox.Show("Invalid booking information.");
                 return;
             }
 
@@ -182,7 +182,11 @@ public class Guest
                     command.Parameters.AddWithValue("@roomnum", book.Room.RoomNumber);
 
                     connection.Open();
-                    command.ExecuteNonQuery();
+                   int rowsaff= command.ExecuteNonQuery();
+                if(rowsaff > 0)
+                {
+                    MessageBox.Show("Booked Successfully!");
+                }
                 }
             }
             finally
@@ -227,7 +231,9 @@ public class Guest
                     // Add parameter
                     command.Parameters.AddWithValue("@roomnum", roomnum);
                     connection.Open();
-                    command.ExecuteNonQuery();
+                 int rowaff=   command.ExecuteNonQuery();
+                if (rowaff > 0)
+                    MessageBox.Show("Booking Deleted!");
                 }
             }
             finally { connection.Close(); }
@@ -419,7 +425,6 @@ public class Guest
         }
         public void DeleteBooking(int? roomnum = null, string name = null)
         {
-            Console.WriteLine("Are you sure you want to delete this booking? (y/n)");
         DialogResult result = MessageBox.Show("Are you sure you want to delete this booking?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
        
 

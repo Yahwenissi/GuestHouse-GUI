@@ -37,32 +37,31 @@
             this.CusNumofDaysTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.CusNameCb = new System.Windows.Forms.ComboBox();
-            this.guestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.R19 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label37 = new System.Windows.Forms.Label();
+            this.R19lbl = new System.Windows.Forms.Label();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox13 = new System.Windows.Forms.PictureBox();
             this.R20 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label36 = new System.Windows.Forms.Label();
+            this.R20lbl = new System.Windows.Forms.Label();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.R18 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label38 = new System.Windows.Forms.Label();
+            this.R18lbl = new System.Windows.Forms.Label();
             this.guna2Panel15 = new Guna.UI2.WinForms.Guna2Panel();
             this.R17 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label35 = new System.Windows.Forms.Label();
+            this.R17lbl = new System.Windows.Forms.Label();
             this.guna2Panel11 = new Guna.UI2.WinForms.Guna2Panel();
             this.R15 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label33 = new System.Windows.Forms.Label();
+            this.R15lbl = new System.Windows.Forms.Label();
             this.guna2Panel30 = new Guna.UI2.WinForms.Guna2Panel();
             this.R16 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label32 = new System.Windows.Forms.Label();
+            this.R16lbl = new System.Windows.Forms.Label();
             this.guna2Panel32 = new Guna.UI2.WinForms.Guna2Panel();
             this.R13 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label31 = new System.Windows.Forms.Label();
+            this.R13lbl = new System.Windows.Forms.Label();
             this.guna2Panel26 = new Guna.UI2.WinForms.Guna2Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -76,47 +75,47 @@
             this.label1 = new System.Windows.Forms.Label();
             this.AvLbl1 = new System.Windows.Forms.Label();
             this.R14 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label34 = new System.Windows.Forms.Label();
+            this.R14lbl = new System.Windows.Forms.Label();
             this.guna2Panel28 = new Guna.UI2.WinForms.Guna2Panel();
             this.R9 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label27 = new System.Windows.Forms.Label();
+            this.R9lbl = new System.Windows.Forms.Label();
             this.guna2Panel18 = new Guna.UI2.WinForms.Guna2Panel();
             this.R8 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label24 = new System.Windows.Forms.Label();
+            this.R8lbl = new System.Windows.Forms.Label();
             this.guna2Panel14 = new Guna.UI2.WinForms.Guna2Panel();
             this.R7 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label25 = new System.Windows.Forms.Label();
+            this.R7lbl = new System.Windows.Forms.Label();
             this.guna2Panel12 = new Guna.UI2.WinForms.Guna2Panel();
             this.R5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label23 = new System.Windows.Forms.Label();
+            this.R5lbl = new System.Windows.Forms.Label();
             this.guna2Panel8 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.R11 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label29 = new System.Windows.Forms.Label();
+            this.R11lbl = new System.Windows.Forms.Label();
             this.guna2Panel20 = new Guna.UI2.WinForms.Guna2Panel();
             this.R12 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label28 = new System.Windows.Forms.Label();
+            this.R12lbl = new System.Windows.Forms.Label();
             this.guna2Panel22 = new Guna.UI2.WinForms.Guna2Panel();
             this.R10 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label30 = new System.Windows.Forms.Label();
+            this.R10lbl = new System.Windows.Forms.Label();
             this.guna2Panel16 = new Guna.UI2.WinForms.Guna2Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.R6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label26 = new System.Windows.Forms.Label();
+            this.R6lbl = new System.Windows.Forms.Label();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.R3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label13 = new System.Windows.Forms.Label();
+            this.R3lbl = new System.Windows.Forms.Label();
             this.CusGenCb = new System.Windows.Forms.ComboBox();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
             this.R4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label40 = new System.Windows.Forms.Label();
+            this.R4lbl = new System.Windows.Forms.Label();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.R2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label22 = new System.Windows.Forms.Label();
+            this.R2lbl = new System.Windows.Forms.Label();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.BookedLbl = new System.Windows.Forms.Label();
             this.R1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.R1lbl = new System.Windows.Forms.Label();
             this.pictureBox12 = new System.Windows.Forms.PictureBox();
             this.label14 = new System.Windows.Forms.Label();
             this.CustNumLbl = new System.Windows.Forms.Label();
@@ -145,8 +144,9 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.roomnumtb = new System.Windows.Forms.TextBox();
+            this.guestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.R19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -184,11 +184,13 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
+            this.Panel1.Controls.Add(this.roomnumtb);
             this.Panel1.Controls.Add(this.label41);
             this.Panel1.Controls.Add(this.label39);
             this.Panel1.Controls.Add(this.BookBtn);
@@ -271,10 +273,6 @@
             this.CusNameCb.TabIndex = 103;
             this.CusNameCb.SelectionChangeCommitted += new System.EventHandler(this.CusIdCb_SelectionChangeCommitted);
             // 
-            // guestBindingSource
-            // 
-            this.guestBindingSource.DataSource = typeof(Guest);
-            // 
             // guna2Panel24
             // 
             this.guna2Panel24.BackColor = System.Drawing.Color.SteelBlue;
@@ -322,7 +320,7 @@
             this.R19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R19.BorderRadius = 10;
             this.R19.BorderThickness = 1;
-            this.R19.Controls.Add(this.label37);
+            this.R19.Controls.Add(this.R19lbl);
             this.R19.Controls.Add(this.guna2Panel3);
             this.R19.Location = new System.Drawing.Point(555, 739);
             this.R19.Name = "R19";
@@ -331,16 +329,17 @@
             this.R19.Click += new System.EventHandler(this.R19_Click);
             this.R19.Paint += new System.Windows.Forms.PaintEventHandler(this.R19_Paint);
             // 
-            // label37
+            // R19lbl
             // 
-            this.label37.AutoSize = true;
-            this.label37.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label37.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label37.Location = new System.Drawing.Point(47, 31);
-            this.label37.Name = "label37";
-            this.label37.Size = new System.Drawing.Size(114, 27);
-            this.label37.TabIndex = 103;
-            this.label37.Text = "Room 19";
+            this.R19lbl.AutoSize = true;
+            this.R19lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R19lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R19lbl.Location = new System.Drawing.Point(47, 31);
+            this.R19lbl.Name = "R19lbl";
+            this.R19lbl.Size = new System.Drawing.Size(114, 27);
+            this.R19lbl.TabIndex = 103;
+            this.R19lbl.Text = "Room 19";
+            this.R19lbl.Click += new System.EventHandler(this.R19lbl_Click);
             // 
             // guna2Panel3
             // 
@@ -368,7 +367,7 @@
             this.R20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R20.BorderRadius = 10;
             this.R20.BorderThickness = 1;
-            this.R20.Controls.Add(this.label36);
+            this.R20.Controls.Add(this.R20lbl);
             this.R20.Controls.Add(this.guna2Panel7);
             this.R20.Location = new System.Drawing.Point(760, 739);
             this.R20.Name = "R20";
@@ -377,16 +376,17 @@
             this.R20.Click += new System.EventHandler(this.R20_Click);
             this.R20.Paint += new System.Windows.Forms.PaintEventHandler(this.R20_Paint);
             // 
-            // label36
+            // R20lbl
             // 
-            this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label36.Location = new System.Drawing.Point(46, 31);
-            this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(114, 27);
-            this.label36.TabIndex = 102;
-            this.label36.Text = "Room 20";
+            this.R20lbl.AutoSize = true;
+            this.R20lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R20lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R20lbl.Location = new System.Drawing.Point(46, 31);
+            this.R20lbl.Name = "R20lbl";
+            this.R20lbl.Size = new System.Drawing.Size(114, 27);
+            this.R20lbl.TabIndex = 102;
+            this.R20lbl.Text = "Room 20";
+            this.R20lbl.Click += new System.EventHandler(this.R20lbl_Click);
             // 
             // guna2Panel7
             // 
@@ -403,7 +403,7 @@
             this.R18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R18.BorderRadius = 10;
             this.R18.BorderThickness = 1;
-            this.R18.Controls.Add(this.label38);
+            this.R18.Controls.Add(this.R18lbl);
             this.R18.Controls.Add(this.guna2Panel15);
             this.R18.Location = new System.Drawing.Point(359, 739);
             this.R18.Name = "R18";
@@ -412,16 +412,17 @@
             this.R18.Click += new System.EventHandler(this.R18_Click);
             this.R18.Paint += new System.Windows.Forms.PaintEventHandler(this.R18_Paint);
             // 
-            // label38
+            // R18lbl
             // 
-            this.label38.AutoSize = true;
-            this.label38.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label38.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label38.Location = new System.Drawing.Point(48, 31);
-            this.label38.Name = "label38";
-            this.label38.Size = new System.Drawing.Size(114, 27);
-            this.label38.TabIndex = 104;
-            this.label38.Text = "Room 18";
+            this.R18lbl.AutoSize = true;
+            this.R18lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R18lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R18lbl.Location = new System.Drawing.Point(48, 31);
+            this.R18lbl.Name = "R18lbl";
+            this.R18lbl.Size = new System.Drawing.Size(114, 27);
+            this.R18lbl.TabIndex = 104;
+            this.R18lbl.Text = "Room 18";
+            this.R18lbl.Click += new System.EventHandler(this.R18lbl_Click);
             // 
             // guna2Panel15
             // 
@@ -438,7 +439,7 @@
             this.R17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R17.BorderRadius = 10;
             this.R17.BorderThickness = 1;
-            this.R17.Controls.Add(this.label35);
+            this.R17.Controls.Add(this.R17lbl);
             this.R17.Controls.Add(this.guna2Panel11);
             this.R17.Location = new System.Drawing.Point(156, 739);
             this.R17.Name = "R17";
@@ -447,16 +448,17 @@
             this.R17.Click += new System.EventHandler(this.R17_Click);
             this.R17.Paint += new System.Windows.Forms.PaintEventHandler(this.R17_Paint);
             // 
-            // label35
+            // R17lbl
             // 
-            this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label35.Location = new System.Drawing.Point(49, 31);
-            this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(114, 27);
-            this.label35.TabIndex = 101;
-            this.label35.Text = "Room 17";
+            this.R17lbl.AutoSize = true;
+            this.R17lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R17lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R17lbl.Location = new System.Drawing.Point(49, 31);
+            this.R17lbl.Name = "R17lbl";
+            this.R17lbl.Size = new System.Drawing.Size(114, 27);
+            this.R17lbl.TabIndex = 101;
+            this.R17lbl.Text = "Room 17";
+            this.R17lbl.Click += new System.EventHandler(this.R17lbl_Click);
             // 
             // guna2Panel11
             // 
@@ -473,7 +475,7 @@
             this.R15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R15.BorderRadius = 10;
             this.R15.BorderThickness = 1;
-            this.R15.Controls.Add(this.label33);
+            this.R15.Controls.Add(this.R15lbl);
             this.R15.Controls.Add(this.guna2Panel30);
             this.R15.Location = new System.Drawing.Point(555, 645);
             this.R15.Name = "R15";
@@ -482,16 +484,17 @@
             this.R15.Click += new System.EventHandler(this.R15_Click);
             this.R15.Paint += new System.Windows.Forms.PaintEventHandler(this.R15_Paint);
             // 
-            // label33
+            // R15lbl
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label33.Location = new System.Drawing.Point(47, 31);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(114, 27);
-            this.label33.TabIndex = 103;
-            this.label33.Text = "Room 15";
+            this.R15lbl.AutoSize = true;
+            this.R15lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R15lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R15lbl.Location = new System.Drawing.Point(47, 31);
+            this.R15lbl.Name = "R15lbl";
+            this.R15lbl.Size = new System.Drawing.Size(114, 27);
+            this.R15lbl.TabIndex = 103;
+            this.R15lbl.Text = "Room 15";
+            this.R15lbl.Click += new System.EventHandler(this.R15lbl_Click);
             // 
             // guna2Panel30
             // 
@@ -508,7 +511,7 @@
             this.R16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R16.BorderRadius = 10;
             this.R16.BorderThickness = 1;
-            this.R16.Controls.Add(this.label32);
+            this.R16.Controls.Add(this.R16lbl);
             this.R16.Controls.Add(this.guna2Panel32);
             this.R16.Location = new System.Drawing.Point(760, 645);
             this.R16.Name = "R16";
@@ -517,16 +520,17 @@
             this.R16.Click += new System.EventHandler(this.R16_Click);
             this.R16.Paint += new System.Windows.Forms.PaintEventHandler(this.R16_Paint);
             // 
-            // label32
+            // R16lbl
             // 
-            this.label32.AutoSize = true;
-            this.label32.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label32.Location = new System.Drawing.Point(46, 31);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(114, 27);
-            this.label32.TabIndex = 102;
-            this.label32.Text = "Room 16";
+            this.R16lbl.AutoSize = true;
+            this.R16lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R16lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R16lbl.Location = new System.Drawing.Point(46, 31);
+            this.R16lbl.Name = "R16lbl";
+            this.R16lbl.Size = new System.Drawing.Size(114, 27);
+            this.R16lbl.TabIndex = 102;
+            this.R16lbl.Text = "Room 16";
+            this.R16lbl.Click += new System.EventHandler(this.R16lbl_Click);
             // 
             // guna2Panel32
             // 
@@ -543,7 +547,7 @@
             this.R13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R13.BorderRadius = 10;
             this.R13.BorderThickness = 1;
-            this.R13.Controls.Add(this.label31);
+            this.R13.Controls.Add(this.R13lbl);
             this.R13.Controls.Add(this.guna2Panel26);
             this.R13.Location = new System.Drawing.Point(156, 645);
             this.R13.Name = "R13";
@@ -552,16 +556,17 @@
             this.R13.Click += new System.EventHandler(this.R13_Click);
             this.R13.Paint += new System.Windows.Forms.PaintEventHandler(this.R13_Paint);
             // 
-            // label31
+            // R13lbl
             // 
-            this.label31.AutoSize = true;
-            this.label31.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label31.Location = new System.Drawing.Point(49, 31);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(114, 27);
-            this.label31.TabIndex = 101;
-            this.label31.Text = "Room 13";
+            this.R13lbl.AutoSize = true;
+            this.R13lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R13lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R13lbl.Location = new System.Drawing.Point(49, 31);
+            this.R13lbl.Name = "R13lbl";
+            this.R13lbl.Size = new System.Drawing.Size(114, 27);
+            this.R13lbl.TabIndex = 101;
+            this.R13lbl.Text = "Room 13";
+            this.R13lbl.Click += new System.EventHandler(this.R13lbl_Click);
             // 
             // guna2Panel26
             // 
@@ -682,9 +687,9 @@
             this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(185, 311);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 32);
+            this.label1.Size = new System.Drawing.Size(81, 32);
             this.label1.TabIndex = 58;
-            this.label1.Text = "Rooms Plan";
+            this.label1.Text = "Room:";
             // 
             // AvLbl1
             // 
@@ -703,7 +708,7 @@
             this.R14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R14.BorderRadius = 10;
             this.R14.BorderThickness = 1;
-            this.R14.Controls.Add(this.label34);
+            this.R14.Controls.Add(this.R14lbl);
             this.R14.Controls.Add(this.guna2Panel28);
             this.R14.Location = new System.Drawing.Point(359, 645);
             this.R14.Name = "R14";
@@ -712,16 +717,17 @@
             this.R14.Click += new System.EventHandler(this.R14_Click);
             this.R14.Paint += new System.Windows.Forms.PaintEventHandler(this.R14_Paint);
             // 
-            // label34
+            // R14lbl
             // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label34.Location = new System.Drawing.Point(48, 31);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(114, 27);
-            this.label34.TabIndex = 104;
-            this.label34.Text = "Room 14";
+            this.R14lbl.AutoSize = true;
+            this.R14lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R14lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R14lbl.Location = new System.Drawing.Point(48, 31);
+            this.R14lbl.Name = "R14lbl";
+            this.R14lbl.Size = new System.Drawing.Size(114, 27);
+            this.R14lbl.TabIndex = 104;
+            this.R14lbl.Text = "Room 14";
+            this.R14lbl.Click += new System.EventHandler(this.R14lbl_Click);
             // 
             // guna2Panel28
             // 
@@ -738,7 +744,7 @@
             this.R9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R9.BorderRadius = 10;
             this.R9.BorderThickness = 1;
-            this.R9.Controls.Add(this.label27);
+            this.R9.Controls.Add(this.R9lbl);
             this.R9.Controls.Add(this.guna2Panel18);
             this.R9.Location = new System.Drawing.Point(156, 551);
             this.R9.Name = "R9";
@@ -747,16 +753,17 @@
             this.R9.Click += new System.EventHandler(this.R9_Click);
             this.R9.Paint += new System.Windows.Forms.PaintEventHandler(this.R9_Paint);
             // 
-            // label27
+            // R9lbl
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label27.Location = new System.Drawing.Point(49, 31);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(101, 27);
-            this.label27.TabIndex = 101;
-            this.label27.Text = "Room 9";
+            this.R9lbl.AutoSize = true;
+            this.R9lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R9lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R9lbl.Location = new System.Drawing.Point(49, 31);
+            this.R9lbl.Name = "R9lbl";
+            this.R9lbl.Size = new System.Drawing.Size(101, 27);
+            this.R9lbl.TabIndex = 101;
+            this.R9lbl.Text = "Room 9";
+            this.R9lbl.Click += new System.EventHandler(this.R9lbl_Click);
             // 
             // guna2Panel18
             // 
@@ -773,7 +780,7 @@
             this.R8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R8.BorderRadius = 10;
             this.R8.BorderThickness = 1;
-            this.R8.Controls.Add(this.label24);
+            this.R8.Controls.Add(this.R8lbl);
             this.R8.Controls.Add(this.guna2Panel14);
             this.R8.Location = new System.Drawing.Point(760, 457);
             this.R8.Name = "R8";
@@ -782,16 +789,17 @@
             this.R8.Click += new System.EventHandler(this.R8_Click);
             this.R8.Paint += new System.Windows.Forms.PaintEventHandler(this.R8_Paint);
             // 
-            // label24
+            // R8lbl
             // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label24.Location = new System.Drawing.Point(46, 31);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(101, 27);
-            this.label24.TabIndex = 102;
-            this.label24.Text = "Room 8";
+            this.R8lbl.AutoSize = true;
+            this.R8lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R8lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R8lbl.Location = new System.Drawing.Point(46, 31);
+            this.R8lbl.Name = "R8lbl";
+            this.R8lbl.Size = new System.Drawing.Size(101, 27);
+            this.R8lbl.TabIndex = 102;
+            this.R8lbl.Text = "Room 8";
+            this.R8lbl.Click += new System.EventHandler(this.R8lbl_Click);
             // 
             // guna2Panel14
             // 
@@ -808,7 +816,7 @@
             this.R7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R7.BorderRadius = 10;
             this.R7.BorderThickness = 1;
-            this.R7.Controls.Add(this.label25);
+            this.R7.Controls.Add(this.R7lbl);
             this.R7.Controls.Add(this.guna2Panel12);
             this.R7.Location = new System.Drawing.Point(555, 457);
             this.R7.Name = "R7";
@@ -817,16 +825,17 @@
             this.R7.Click += new System.EventHandler(this.R7_Click);
             this.R7.Paint += new System.Windows.Forms.PaintEventHandler(this.R7_Paint);
             // 
-            // label25
+            // R7lbl
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label25.Location = new System.Drawing.Point(47, 31);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(101, 27);
-            this.label25.TabIndex = 103;
-            this.label25.Text = "Room 7";
+            this.R7lbl.AutoSize = true;
+            this.R7lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R7lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R7lbl.Location = new System.Drawing.Point(47, 31);
+            this.R7lbl.Name = "R7lbl";
+            this.R7lbl.Size = new System.Drawing.Size(101, 27);
+            this.R7lbl.TabIndex = 103;
+            this.R7lbl.Text = "Room 7";
+            this.R7lbl.Click += new System.EventHandler(this.R7lbl_Click);
             // 
             // guna2Panel12
             // 
@@ -843,7 +852,7 @@
             this.R5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R5.BorderRadius = 10;
             this.R5.BorderThickness = 1;
-            this.R5.Controls.Add(this.label23);
+            this.R5.Controls.Add(this.R5lbl);
             this.R5.Controls.Add(this.guna2Panel8);
             this.R5.Location = new System.Drawing.Point(156, 457);
             this.R5.Name = "R5";
@@ -852,16 +861,17 @@
             this.R5.Click += new System.EventHandler(this.R5_Click);
             this.R5.Paint += new System.Windows.Forms.PaintEventHandler(this.R5_Paint);
             // 
-            // label23
+            // R5lbl
             // 
-            this.label23.AutoSize = true;
-            this.label23.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label23.Location = new System.Drawing.Point(49, 31);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(101, 27);
-            this.label23.TabIndex = 101;
-            this.label23.Text = "Room 5";
+            this.R5lbl.AutoSize = true;
+            this.R5lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R5lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R5lbl.Location = new System.Drawing.Point(49, 31);
+            this.R5lbl.Name = "R5lbl";
+            this.R5lbl.Size = new System.Drawing.Size(101, 27);
+            this.R5lbl.TabIndex = 101;
+            this.R5lbl.Text = "Room 5";
+            this.R5lbl.Click += new System.EventHandler(this.R5lbl_Click);
             // 
             // guna2Panel8
             // 
@@ -888,7 +898,7 @@
             this.R11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R11.BorderRadius = 10;
             this.R11.BorderThickness = 1;
-            this.R11.Controls.Add(this.label29);
+            this.R11.Controls.Add(this.R11lbl);
             this.R11.Controls.Add(this.guna2Panel20);
             this.R11.Location = new System.Drawing.Point(555, 551);
             this.R11.Name = "R11";
@@ -897,16 +907,17 @@
             this.R11.Click += new System.EventHandler(this.R11_Click);
             this.R11.Paint += new System.Windows.Forms.PaintEventHandler(this.R11_Paint);
             // 
-            // label29
+            // R11lbl
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label29.Location = new System.Drawing.Point(47, 31);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(114, 27);
-            this.label29.TabIndex = 103;
-            this.label29.Text = "Room 11";
+            this.R11lbl.AutoSize = true;
+            this.R11lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R11lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R11lbl.Location = new System.Drawing.Point(47, 31);
+            this.R11lbl.Name = "R11lbl";
+            this.R11lbl.Size = new System.Drawing.Size(114, 27);
+            this.R11lbl.TabIndex = 103;
+            this.R11lbl.Text = "Room 11";
+            this.R11lbl.Click += new System.EventHandler(this.R11lbl_Click);
             // 
             // guna2Panel20
             // 
@@ -923,7 +934,7 @@
             this.R12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R12.BorderRadius = 10;
             this.R12.BorderThickness = 1;
-            this.R12.Controls.Add(this.label28);
+            this.R12.Controls.Add(this.R12lbl);
             this.R12.Controls.Add(this.guna2Panel22);
             this.R12.Location = new System.Drawing.Point(760, 551);
             this.R12.Name = "R12";
@@ -932,16 +943,17 @@
             this.R12.Click += new System.EventHandler(this.R12_Click);
             this.R12.Paint += new System.Windows.Forms.PaintEventHandler(this.R12_Paint);
             // 
-            // label28
+            // R12lbl
             // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label28.Location = new System.Drawing.Point(46, 31);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(114, 27);
-            this.label28.TabIndex = 102;
-            this.label28.Text = "Room 12";
+            this.R12lbl.AutoSize = true;
+            this.R12lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R12lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R12lbl.Location = new System.Drawing.Point(46, 31);
+            this.R12lbl.Name = "R12lbl";
+            this.R12lbl.Size = new System.Drawing.Size(114, 27);
+            this.R12lbl.TabIndex = 102;
+            this.R12lbl.Text = "Room 12";
+            this.R12lbl.Click += new System.EventHandler(this.R12lbl_Click);
             // 
             // guna2Panel22
             // 
@@ -958,7 +970,7 @@
             this.R10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R10.BorderRadius = 10;
             this.R10.BorderThickness = 1;
-            this.R10.Controls.Add(this.label30);
+            this.R10.Controls.Add(this.R10lbl);
             this.R10.Controls.Add(this.guna2Panel16);
             this.R10.Location = new System.Drawing.Point(359, 551);
             this.R10.Name = "R10";
@@ -967,16 +979,17 @@
             this.R10.Click += new System.EventHandler(this.R10_Click);
             this.R10.Paint += new System.Windows.Forms.PaintEventHandler(this.R10_Paint);
             // 
-            // label30
+            // R10lbl
             // 
-            this.label30.AutoSize = true;
-            this.label30.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label30.Location = new System.Drawing.Point(49, 31);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(114, 27);
-            this.label30.TabIndex = 104;
-            this.label30.Text = "Room 10";
+            this.R10lbl.AutoSize = true;
+            this.R10lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R10lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R10lbl.Location = new System.Drawing.Point(49, 31);
+            this.R10lbl.Name = "R10lbl";
+            this.R10lbl.Size = new System.Drawing.Size(114, 27);
+            this.R10lbl.TabIndex = 104;
+            this.R10lbl.Text = "Room 10";
+            this.R10lbl.Click += new System.EventHandler(this.R10lbl_Click);
             // 
             // guna2Panel16
             // 
@@ -1004,7 +1017,7 @@
             this.R6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R6.BorderRadius = 10;
             this.R6.BorderThickness = 1;
-            this.R6.Controls.Add(this.label26);
+            this.R6.Controls.Add(this.R6lbl);
             this.R6.Controls.Add(this.guna2Panel10);
             this.R6.Location = new System.Drawing.Point(359, 457);
             this.R6.Name = "R6";
@@ -1013,16 +1026,17 @@
             this.R6.Click += new System.EventHandler(this.R6_Click);
             this.R6.Paint += new System.Windows.Forms.PaintEventHandler(this.R6_Paint);
             // 
-            // label26
+            // R6lbl
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label26.Location = new System.Drawing.Point(48, 31);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(101, 27);
-            this.label26.TabIndex = 104;
-            this.label26.Text = "Room 6";
+            this.R6lbl.AutoSize = true;
+            this.R6lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R6lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R6lbl.Location = new System.Drawing.Point(48, 31);
+            this.R6lbl.Name = "R6lbl";
+            this.R6lbl.Size = new System.Drawing.Size(101, 27);
+            this.R6lbl.TabIndex = 104;
+            this.R6lbl.Text = "Room 6";
+            this.R6lbl.Click += new System.EventHandler(this.R6lbl_Click);
             // 
             // guna2Panel10
             // 
@@ -1039,7 +1053,7 @@
             this.R3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R3.BorderRadius = 10;
             this.R3.BorderThickness = 1;
-            this.R3.Controls.Add(this.label13);
+            this.R3.Controls.Add(this.R3lbl);
             this.R3.Controls.Add(this.CusGenCb);
             this.R3.Controls.Add(this.guna2Panel6);
             this.R3.Location = new System.Drawing.Point(555, 363);
@@ -1049,16 +1063,17 @@
             this.R3.Click += new System.EventHandler(this.R3_Click);
             this.R3.Paint += new System.Windows.Forms.PaintEventHandler(this.R3_Paint);
             // 
-            // label13
+            // R3lbl
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label13.Location = new System.Drawing.Point(47, 30);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(101, 27);
-            this.label13.TabIndex = 104;
-            this.label13.Text = "Room 3";
+            this.R3lbl.AutoSize = true;
+            this.R3lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R3lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R3lbl.Location = new System.Drawing.Point(47, 30);
+            this.R3lbl.Name = "R3lbl";
+            this.R3lbl.Size = new System.Drawing.Size(101, 27);
+            this.R3lbl.TabIndex = 104;
+            this.R3lbl.Text = "Room 3";
+            this.R3lbl.Click += new System.EventHandler(this.R3lbl_Click);
             // 
             // CusGenCb
             // 
@@ -1087,7 +1102,7 @@
             this.R4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R4.BorderRadius = 10;
             this.R4.BorderThickness = 1;
-            this.R4.Controls.Add(this.label40);
+            this.R4.Controls.Add(this.R4lbl);
             this.R4.Controls.Add(this.guna2Panel4);
             this.R4.Location = new System.Drawing.Point(760, 363);
             this.R4.Name = "R4";
@@ -1096,16 +1111,17 @@
             this.R4.Click += new System.EventHandler(this.R4_Click);
             this.R4.Paint += new System.Windows.Forms.PaintEventHandler(this.R4_Paint);
             // 
-            // label40
+            // R4lbl
             // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label40.Location = new System.Drawing.Point(46, 30);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(101, 27);
-            this.label40.TabIndex = 103;
-            this.label40.Text = "Room 4";
+            this.R4lbl.AutoSize = true;
+            this.R4lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R4lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R4lbl.Location = new System.Drawing.Point(46, 30);
+            this.R4lbl.Name = "R4lbl";
+            this.R4lbl.Size = new System.Drawing.Size(101, 27);
+            this.R4lbl.TabIndex = 103;
+            this.R4lbl.Text = "Room 4";
+            this.R4lbl.Click += new System.EventHandler(this.R4lbl_Click);
             // 
             // guna2Panel4
             // 
@@ -1122,7 +1138,7 @@
             this.R2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R2.BorderRadius = 10;
             this.R2.BorderThickness = 1;
-            this.R2.Controls.Add(this.label22);
+            this.R2.Controls.Add(this.R2lbl);
             this.R2.Controls.Add(this.guna2Panel2);
             this.R2.Location = new System.Drawing.Point(359, 363);
             this.R2.Name = "R2";
@@ -1131,16 +1147,17 @@
             this.R2.Click += new System.EventHandler(this.R2_Click);
             this.R2.Paint += new System.Windows.Forms.PaintEventHandler(this.R2_Paint);
             // 
-            // label22
+            // R2lbl
             // 
-            this.label22.AutoSize = true;
-            this.label22.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label22.Location = new System.Drawing.Point(48, 30);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(101, 27);
-            this.label22.TabIndex = 105;
-            this.label22.Text = "Room 2";
+            this.R2lbl.AutoSize = true;
+            this.R2lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R2lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R2lbl.Location = new System.Drawing.Point(48, 30);
+            this.R2lbl.Name = "R2lbl";
+            this.R2lbl.Size = new System.Drawing.Size(101, 27);
+            this.R2lbl.TabIndex = 105;
+            this.R2lbl.Text = "Room 2";
+            this.R2lbl.Click += new System.EventHandler(this.R2lbl_Click);
             // 
             // guna2Panel2
             // 
@@ -1168,7 +1185,7 @@
             this.R1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R1.BorderRadius = 10;
             this.R1.BorderThickness = 1;
-            this.R1.Controls.Add(this.label12);
+            this.R1.Controls.Add(this.R1lbl);
             this.R1.Controls.Add(this.guna2Panel24);
             this.R1.Location = new System.Drawing.Point(156, 363);
             this.R1.Name = "R1";
@@ -1177,16 +1194,17 @@
             this.R1.Click += new System.EventHandler(this.R1_Click);
             this.R1.Paint += new System.Windows.Forms.PaintEventHandler(this.R1_Paint);
             // 
-            // label12
+            // R1lbl
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.label12.Location = new System.Drawing.Point(44, 31);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(101, 27);
-            this.label12.TabIndex = 100;
-            this.label12.Text = "Room 1";
+            this.R1lbl.AutoSize = true;
+            this.R1lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.R1lbl.Location = new System.Drawing.Point(44, 31);
+            this.R1lbl.Name = "R1lbl";
+            this.R1lbl.Size = new System.Drawing.Size(101, 27);
+            this.R1lbl.TabIndex = 100;
+            this.R1lbl.Text = "Room 1";
+            this.R1lbl.Click += new System.EventHandler(this.R1lbl_Click);
             // 
             // pictureBox12
             // 
@@ -1469,6 +1487,19 @@
             // 
             this.guna2Elipse1.BorderRadius = 35;
             // 
+            // roomnumtb
+            // 
+            this.roomnumtb.Enabled = false;
+            this.roomnumtb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomnumtb.Location = new System.Drawing.Point(131, 309);
+            this.roomnumtb.Name = "roomnumtb";
+            this.roomnumtb.Size = new System.Drawing.Size(60, 32);
+            this.roomnumtb.TabIndex = 109;
+            // 
+            // guestBindingSource
+            // 
+            this.guestBindingSource.DataSource = typeof(Guest);
+            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1534,7 +1565,6 @@
             this.Enter += new System.EventHandler(this.DashBoard_Enter);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.R19.ResumeLayout(false);
             this.R19.PerformLayout();
@@ -1595,6 +1625,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1694,28 +1725,29 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox CusNumofDaysTb;
         private Guna.UI2.WinForms.Guna2Button BookBtn;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label R19lbl;
+        private System.Windows.Forms.Label R20lbl;
+        private System.Windows.Forms.Label R18lbl;
+        private System.Windows.Forms.Label R17lbl;
+        private System.Windows.Forms.Label R15lbl;
+        private System.Windows.Forms.Label R16lbl;
+        private System.Windows.Forms.Label R13lbl;
+        private System.Windows.Forms.Label R14lbl;
+        private System.Windows.Forms.Label R9lbl;
+        private System.Windows.Forms.Label R8lbl;
+        private System.Windows.Forms.Label R7lbl;
+        private System.Windows.Forms.Label R5lbl;
+        private System.Windows.Forms.Label R11lbl;
+        private System.Windows.Forms.Label R12lbl;
+        private System.Windows.Forms.Label R10lbl;
+        private System.Windows.Forms.Label R6lbl;
+        private System.Windows.Forms.Label R3lbl;
+        private System.Windows.Forms.Label R4lbl;
+        private System.Windows.Forms.Label R2lbl;
+        private System.Windows.Forms.Label R1lbl;
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.BindingSource guestBindingSource;
+        private System.Windows.Forms.TextBox roomnumtb;
     }
 }

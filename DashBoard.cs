@@ -43,7 +43,7 @@ namespace GuestHouse_GUI
 
         private void R1_Paint(object sender, PaintEventArgs e)
         {
-            RoomNumber = 1;
+            roomnumtb.Text = 1.ToString();
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
@@ -106,27 +106,14 @@ namespace GuestHouse_GUI
         
         string RType;
         int RC;
-        private void GetRoomType()
-        {
-            Con.Open();
-            string Query = "select * from Rooms where RoomNumber=" + RoomNumber + "";
-            SqlCommand cmd = new SqlCommand(Query, Con);
-            DataTable dt = new DataTable();
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            sda.Fill(dt);
-            foreach (DataRow dr in dt.Rows)
-            {
-                RType = dr["Type"].ToString();
-                RC = Convert.ToInt32(dr["Price"].ToString());
-            }
-            Con.Close();
-        }
+       
        
         private void Reset()
         {
-            RType = "";
-            RC = 0;
+            CusNameCb.Text = "";
+            CusNumofDaysTb.Text = "";
             RoomNumber = 0;
+            roomnumtb.Text = string.Empty;
         }
        
         private void BookBtn_Click(object sender, EventArgs e)
@@ -144,6 +131,10 @@ namespace GuestHouse_GUI
                     if(g != null&&g.FullName== CusNameCb.Text)
                     {
                     singleguest= new Guest(g.FullName,g.PhoneNumber,g.Dob,g.gender);
+                        singleguest.CheckInDate = DateTime.Now.ToString("yyyy-MM-dd");
+                        singleguest.CheckOutDate = DateTime.Parse(singleguest.CheckInDate).AddDays(int.Parse(CusNumofDaysTb.Text)).ToString("yyyy-MM-dd");
+
+
 
                     }
                 }
@@ -152,10 +143,25 @@ namespace GuestHouse_GUI
                 {
                     
                     Program.list.AddBooking(RoomNumber,singleguest, Program.list.getPrice(RoomNumber) * int.Parse(CusNumofDaysTb.Text));
+                    for (int i=0;i< Program.guest.Length;i++)
+                    {
+
+                        if (Program.guest[i].FullName==singleguest.FullName)
+                        {
+                            Program.guest[i] = null;
+
+
+                        }
+                    }
                 }
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    bookedcheck();
+                    Reset();
                 }
 
                 
@@ -264,102 +270,104 @@ namespace GuestHouse_GUI
 
         private void R1_Click(object sender, EventArgs e)
         {
-            RoomNumber = 1;
+          
+            roomnumtb.Text = 1.ToString();
         }
 
         private void R2_Click(object sender, EventArgs e)
         {
-            RoomNumber = 2;
+            roomnumtb.Text = 2.ToString();
+
         }
 
         private void R3_Click(object sender, EventArgs e)
         {
-            RoomNumber = 3;
+            roomnumtb.Text = 3.ToString();
         }
 
         private void R4_Click(object sender, EventArgs e)
         {
-            RoomNumber = 4;
+            roomnumtb.Text = 4.ToString();
         }
 
         private void R5_Click(object sender, EventArgs e)
         {
-            RoomNumber = 5;
+            roomnumtb.Text = 5.ToString();
         }
 
         private void R6_Click(object sender, EventArgs e)
         {
-            RoomNumber = 6;
+            roomnumtb.Text = 6.ToString();
         }
 
         private void R7_Click(object sender, EventArgs e)
         {
-            RoomNumber = 7;
+            roomnumtb.Text = 7.ToString();
         }
 
         private void R8_Click(object sender, EventArgs e)
         {
-            RoomNumber = 8;
+            roomnumtb.Text = 8.ToString();
         }
 
         private void R9_Click(object sender, EventArgs e)
         {
-            RoomNumber = 9;
+            roomnumtb.Text = 9.ToString();
         }
 
         private void R10_Click(object sender, EventArgs e)
         {
-            RoomNumber = 10;
+            roomnumtb.Text = 10.ToString();
         }
 
         private void R11_Click(object sender, EventArgs e)
         {
-            RoomNumber = 11;
+            roomnumtb.Text = 11.ToString();
         }
 
         private void R12_Click(object sender, EventArgs e)
         {
-            RoomNumber = 12;
+            roomnumtb.Text = 12.ToString();
         }
 
         private void R13_Click(object sender, EventArgs e)
         {
-            RoomNumber = 13;
+            roomnumtb.Text = 13.ToString();
         }
 
         private void R14_Click(object sender, EventArgs e)
         {
-            RoomNumber = 14;
+            roomnumtb.Text = 14.ToString();
         }
 
         private void R15_Click(object sender, EventArgs e)
         {
-            RoomNumber = 15;
+            roomnumtb.Text = 15.ToString();
         }
 
         private void R16_Click(object sender, EventArgs e)
         {
-            RoomNumber = 16;
+            roomnumtb.Text = 16.ToString();
         }
 
         private void R17_Click(object sender, EventArgs e)
         {
-            RoomNumber = 17;
+            roomnumtb.Text = 17.ToString();
         }
 
         private void R18_Click(object sender, EventArgs e)
         {
-            RoomNumber = 18;
+            roomnumtb.Text = 18.ToString();
         }
 
         private void R19_Click(object sender, EventArgs e)
         {
-            RoomNumber = 19;
+            roomnumtb.Text = 19.ToString();
         }
 
         private void R20_Click(object sender, EventArgs e)
         {
-            RoomNumber = 20;
+            roomnumtb.Text = 20.ToString();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
@@ -410,6 +418,107 @@ namespace GuestHouse_GUI
         {
             populatenamecombo();
 
+        }
+
+        private void R1lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=1.ToString();
+        }
+
+        private void R2lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=2.ToString();
+        }
+
+        private void R3lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=3.ToString();
+        }
+
+        private void R4lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=4.ToString();
+        }
+
+        private void R5lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=5.ToString();
+        }
+
+        private void R6lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=6.ToString();
+        }
+
+        private void R7lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=7.ToString();
+        }
+
+        private void R8lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=8.ToString();
+        }
+
+        private void R9lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=9.ToString();
+        }
+
+        private void R10lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=10.ToString();
+        }
+
+        private void R11lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=11.ToString();
+        }
+
+        private void R12lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=12.ToString();
+        }
+
+        private void R13lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=13.ToString();
+
+        }
+
+        private void R14lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=14.ToString();
+        }
+
+        private void R15lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=15.ToString();
+        }
+
+        private void R16lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=16.ToString();
+        }
+
+        private void R17lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=17.ToString();
+        }
+
+        private void R18lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=18.ToString();
+        }
+
+        private void R19lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=19.ToString();
+        }
+
+        private void R20lbl_Click(object sender, EventArgs e)
+        {
+            roomnumtb.Text=20.ToString();
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)

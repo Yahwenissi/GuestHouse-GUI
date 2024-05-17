@@ -31,17 +31,7 @@ namespace GuestHouse_GUI
                 curr = curr.Next;
             }
         }
-        private void filterBookings()
-        {
-            Con.Open();
-            string Query = "select * from BookingTbl where RType = '"+RTypeCb.SelectedItem.ToString()+"'";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            BookingDGV.DataSource = ds.Tables[0];
-            Con.Close();
-        }
+      
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
@@ -54,7 +44,7 @@ namespace GuestHouse_GUI
 
         private void RTypeCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            filterBookings();
+           
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -94,7 +84,6 @@ namespace GuestHouse_GUI
         {
           nametb.Text = BookingDGV.SelectedRows[0].Cells[0].Value.ToString(); 
          Roomnumcb.Text = BookingDGV.SelectedRows[0].Cells[6].Value.ToString(); 
-          RTypeCb.Text = BookingDGV.SelectedRows[0].Cells[7].Value.ToString(); 
         }
 
         private void bookdelbtn_Click(object sender, EventArgs e)
@@ -104,6 +93,7 @@ namespace GuestHouse_GUI
             else
             {
                 Program.list.DeleteBooking(int.Parse(Roomnumcb.Text),nametb.Text);
+                showBookings();
             }
         }
     }
