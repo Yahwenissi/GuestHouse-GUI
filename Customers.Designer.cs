@@ -74,7 +74,12 @@
             this.EditBtn = new Guna.UI2.WinForms.Guna2Button();
             this.DeleteBtn = new Guna.UI2.WinForms.Guna2Button();
             this.CustomersDGV = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.guna2DataGridView2 = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.newCustomertbl = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.fullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateOFBirth = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.age = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gender = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phonenum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
@@ -89,7 +94,7 @@
             this.flowLayoutPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDGV)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newCustomertbl)).BeginInit();
             this.SuspendLayout();
             // 
             // label8
@@ -545,12 +550,13 @@
             this.CustomersDGV.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Black;
             this.CustomersDGV.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
             this.CustomersDGV.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CustomersDGV_CellContentClick);
+            this.CustomersDGV.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.CustomersDGV_CellMouseClick);
             // 
-            // guna2DataGridView2
+            // newCustomertbl
             // 
             dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            this.guna2DataGridView2.BackgroundColor = System.Drawing.Color.Gray;
+            this.newCustomertbl.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            this.newCustomertbl.BackgroundColor = System.Drawing.Color.Gray;
             dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -558,9 +564,15 @@
             dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
-            this.guna2DataGridView2.ColumnHeadersHeight = 26;
-            this.guna2DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.newCustomertbl.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            this.newCustomertbl.ColumnHeadersHeight = 26;
+            this.newCustomertbl.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.newCustomertbl.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.fullName,
+            this.DateOFBirth,
+            this.age,
+            this.gender,
+            this.phonenum});
             dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -568,36 +580,66 @@
             dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView2.DefaultCellStyle = dataGridViewCellStyle9;
-            this.guna2DataGridView2.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView2.Location = new System.Drawing.Point(197, 652);
-            this.guna2DataGridView2.Name = "guna2DataGridView2";
-            this.guna2DataGridView2.RowHeadersVisible = false;
-            this.guna2DataGridView2.RowHeadersWidth = 51;
-            this.guna2DataGridView2.RowTemplate.Height = 24;
-            this.guna2DataGridView2.Size = new System.Drawing.Size(975, 224);
-            this.guna2DataGridView2.TabIndex = 106;
-            this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView2.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView2.ThemeStyle.BackColor = System.Drawing.Color.Gray;
-            this.guna2DataGridView2.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Gold;
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Rockwell", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView2.ThemeStyle.HeaderStyle.Height = 26;
-            this.guna2DataGridView2.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.Height = 24;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Black;
-            this.guna2DataGridView2.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.newCustomertbl.DefaultCellStyle = dataGridViewCellStyle9;
+            this.newCustomertbl.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.newCustomertbl.Location = new System.Drawing.Point(197, 652);
+            this.newCustomertbl.Name = "newCustomertbl";
+            this.newCustomertbl.RowHeadersVisible = false;
+            this.newCustomertbl.RowHeadersWidth = 51;
+            this.newCustomertbl.RowTemplate.Height = 24;
+            this.newCustomertbl.Size = new System.Drawing.Size(975, 224);
+            this.newCustomertbl.TabIndex = 106;
+            this.newCustomertbl.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.newCustomertbl.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.newCustomertbl.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.newCustomertbl.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.newCustomertbl.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.newCustomertbl.ThemeStyle.BackColor = System.Drawing.Color.Gray;
+            this.newCustomertbl.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.newCustomertbl.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.Gold;
+            this.newCustomertbl.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.newCustomertbl.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Rockwell", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newCustomertbl.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.newCustomertbl.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.newCustomertbl.ThemeStyle.HeaderStyle.Height = 26;
+            this.newCustomertbl.ThemeStyle.ReadOnly = false;
+            this.newCustomertbl.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.newCustomertbl.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.newCustomertbl.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newCustomertbl.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.newCustomertbl.ThemeStyle.RowsStyle.Height = 24;
+            this.newCustomertbl.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.Black;
+            this.newCustomertbl.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.White;
+            // 
+            // fullName
+            // 
+            this.fullName.HeaderText = "Full Name";
+            this.fullName.MinimumWidth = 6;
+            this.fullName.Name = "fullName";
+            // 
+            // DateOFBirth
+            // 
+            this.DateOFBirth.HeaderText = "Date Of Birth";
+            this.DateOFBirth.MinimumWidth = 6;
+            this.DateOFBirth.Name = "DateOFBirth";
+            // 
+            // age
+            // 
+            this.age.HeaderText = "Age";
+            this.age.MinimumWidth = 6;
+            this.age.Name = "age";
+            // 
+            // gender
+            // 
+            this.gender.HeaderText = "Gender";
+            this.gender.MinimumWidth = 6;
+            this.gender.Name = "gender";
+            // 
+            // phonenum
+            // 
+            this.phonenum.HeaderText = "Phone Number";
+            this.phonenum.MinimumWidth = 6;
+            this.phonenum.Name = "phonenum";
             // 
             // label9
             // 
@@ -616,7 +658,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1348, 940);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2DataGridView2);
+            this.Controls.Add(this.newCustomertbl);
             this.Controls.Add(this.CustomersDGV);
             this.Controls.Add(this.DeleteBtn);
             this.Controls.Add(this.EditBtn);
@@ -644,8 +686,8 @@
             this.Controls.Add(this.flowLayoutPanel2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Customers";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Customers";
-            this.Load += new System.EventHandler(this.Customers_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             this.panel3.ResumeLayout(false);
@@ -661,7 +703,7 @@
             this.flowLayoutPanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CustomersDGV)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.newCustomertbl)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -703,7 +745,12 @@
         private Guna.UI2.WinForms.Guna2Button DeleteBtn;
         private Guna.UI2.WinForms.Guna2DataGridView CustomersDGV;
         private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView2;
+        private Guna.UI2.WinForms.Guna2DataGridView newCustomertbl;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn fullName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DateOFBirth;
+        private System.Windows.Forms.DataGridViewTextBoxColumn age;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gender;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phonenum;
     }
 }

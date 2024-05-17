@@ -31,10 +31,13 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.label41 = new System.Windows.Forms.Label();
+            this.label39 = new System.Windows.Forms.Label();
             this.BookBtn = new Guna.UI2.WinForms.Guna2Button();
-            this.CusNameTb = new System.Windows.Forms.TextBox();
+            this.CusNumofDaysTb = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.CusIdCb = new System.Windows.Forms.ComboBox();
+            this.CusNameCb = new System.Windows.Forms.ComboBox();
+            this.guestBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2Panel24 = new Guna.UI2.WinForms.Guna2Panel();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
@@ -143,6 +146,7 @@
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.R19.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox13)).BeginInit();
@@ -185,15 +189,39 @@
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
+            this.Panel1.Controls.Add(this.label41);
+            this.Panel1.Controls.Add(this.label39);
             this.Panel1.Controls.Add(this.BookBtn);
-            this.Panel1.Controls.Add(this.CusNameTb);
+            this.Panel1.Controls.Add(this.CusNumofDaysTb);
             this.Panel1.Controls.Add(this.label8);
-            this.Panel1.Controls.Add(this.CusIdCb);
+            this.Panel1.Controls.Add(this.CusNameCb);
             this.Panel1.Location = new System.Drawing.Point(151, 2);
             this.Panel1.Name = "Panel1";
             this.Panel1.Size = new System.Drawing.Size(819, 833);
             this.Panel1.TabIndex = 0;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // label41
+            // 
+            this.label41.AutoSize = true;
+            this.label41.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label41.ForeColor = System.Drawing.Color.Gold;
+            this.label41.Location = new System.Drawing.Point(515, 244);
+            this.label41.Name = "label41";
+            this.label41.Size = new System.Drawing.Size(77, 27);
+            this.label41.TabIndex = 108;
+            this.label41.Text = "Day/s";
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.ForeColor = System.Drawing.Color.Gold;
+            this.label39.Location = new System.Drawing.Point(388, 245);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(47, 27);
+            this.label39.TabIndex = 107;
+            this.label39.Text = "for";
             // 
             // BookBtn
             // 
@@ -206,46 +234,46 @@
             this.BookBtn.FillColor = System.Drawing.Color.Gold;
             this.BookBtn.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BookBtn.ForeColor = System.Drawing.Color.White;
-            this.BookBtn.Location = new System.Drawing.Point(549, 239);
+            this.BookBtn.Location = new System.Drawing.Point(609, 239);
             this.BookBtn.Name = "BookBtn";
             this.BookBtn.Size = new System.Drawing.Size(93, 32);
             this.BookBtn.TabIndex = 106;
             this.BookBtn.Text = "Book";
             this.BookBtn.Click += new System.EventHandler(this.BookBtn_Click);
             // 
-            // CusNameTb
+            // CusNumofDaysTb
             // 
-            this.CusNameTb.Enabled = false;
-            this.CusNameTb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CusNameTb.Location = new System.Drawing.Point(327, 235);
-            this.CusNameTb.Name = "CusNameTb";
-            this.CusNameTb.Size = new System.Drawing.Size(189, 32);
-            this.CusNameTb.TabIndex = 105;
+            this.CusNumofDaysTb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CusNumofDaysTb.Location = new System.Drawing.Point(456, 240);
+            this.CusNumofDaysTb.Name = "CusNumofDaysTb";
+            this.CusNumofDaysTb.Size = new System.Drawing.Size(60, 32);
+            this.CusNumofDaysTb.TabIndex = 105;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.Gold;
-            this.label8.Location = new System.Drawing.Point(66, 235);
+            this.label8.Location = new System.Drawing.Point(40, 244);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(129, 27);
             this.label8.TabIndex = 104;
             this.label8.Text = "Customer";
             // 
-            // CusIdCb
+            // CusNameCb
             // 
-            this.CusIdCb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
-            this.CusIdCb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.CusIdCb.FormattingEnabled = true;
-            this.CusIdCb.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.CusIdCb.Location = new System.Drawing.Point(208, 235);
-            this.CusIdCb.Name = "CusIdCb";
-            this.CusIdCb.Size = new System.Drawing.Size(113, 32);
-            this.CusIdCb.TabIndex = 103;
-            this.CusIdCb.SelectionChangeCommitted += new System.EventHandler(this.CusIdCb_SelectionChangeCommitted);
+            this.CusNameCb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
+            this.CusNameCb.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
+            this.CusNameCb.FormattingEnabled = true;
+            this.CusNameCb.Location = new System.Drawing.Point(188, 240);
+            this.CusNameCb.Name = "CusNameCb";
+            this.CusNameCb.Size = new System.Drawing.Size(194, 32);
+            this.CusNameCb.TabIndex = 103;
+            this.CusNameCb.SelectionChangeCommitted += new System.EventHandler(this.CusIdCb_SelectionChangeCommitted);
+            // 
+            // guestBindingSource
+            // 
+            this.guestBindingSource.DataSource = typeof(Guest);
             // 
             // guna2Panel24
             // 
@@ -1502,8 +1530,11 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashBoard";
             this.Load += new System.EventHandler(this.DashBoard_Load);
+            this.VisibleChanged += new System.EventHandler(this.DashBoard_VisibleChanged);
+            this.Enter += new System.EventHandler(this.DashBoard_Enter);
             this.Panel1.ResumeLayout(false);
             this.Panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guestBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.R19.ResumeLayout(false);
             this.R19.PerformLayout();
@@ -1659,9 +1690,9 @@
         private System.Windows.Forms.ImageList imageList1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private System.Windows.Forms.ComboBox CusIdCb;
+        private System.Windows.Forms.ComboBox CusNameCb;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox CusNameTb;
+        private System.Windows.Forms.TextBox CusNumofDaysTb;
         private Guna.UI2.WinForms.Guna2Button BookBtn;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.Label label36;
@@ -1683,5 +1714,8 @@
         private System.Windows.Forms.Label label40;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label41;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.BindingSource guestBindingSource;
     }
 }

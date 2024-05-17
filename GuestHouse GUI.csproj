@@ -95,11 +95,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Booking.cs">
+    <Compile Include="Bookings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Booking.Designer.cs">
-      <DependentUpon>Booking.cs</DependentUpon>
+    <Compile Include="Bookings.Designer.cs">
+      <DependentUpon>Bookings.cs</DependentUpon>
     </Compile>
     <Compile Include="Customers.cs">
       <SubType>Form</SubType>
@@ -128,11 +128,13 @@
     <Compile Include="Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Booking.resx">
-      <DependentUpon>Booking.cs</DependentUpon>
+    <EmbeddedResource Include="Bookings.resx">
+      <DependentUpon>Bookings.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="DashBoard.resx">
       <DependentUpon>DashBoard.cs</DependentUpon>
@@ -153,6 +155,7 @@
       <DependentUpon>Users.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
+    <None Include="Properties\DataSources\Guest.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

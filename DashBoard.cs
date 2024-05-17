@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,16 +15,30 @@ namespace GuestHouse_GUI
 {
     public partial class DashBoard : Form
     {
-        LinkedList list;
-        Guest guest;
-
+     
+      
         public DashBoard()
         {
             InitializeComponent();
             CountBooked();
             CountCustomers();
-            CountBooking();
-            GetCustomer();
+          //  CountBooking();
+         //   GetCustomer();
+            bookedcheck();
+           
+        }
+        void populatenamecombo()
+        {
+            CusNameCb.Items.Clear();
+           
+            if(Program.guest!=null)
+            foreach(Guest gue in Program.guest)
+            {
+                if(gue!=null)
+                CusNameCb.Items.Add(gue.FullName);
+            }
+           
+           
         }
 
         private void R1_Paint(object sender, PaintEventArgs e)
@@ -34,63 +49,61 @@ namespace GuestHouse_GUI
         SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         int free, Booked;
         int BPer, FreePer;
+
+        void bookedcheck()
+        {
+            for (int i = 1; i <= 20; i++)
+            {
+                string panelName = "R" + i;
+                Panel roomPanel = this.Controls[panelName] as Panel;
+                if (roomPanel != null)
+                {
+                    if (Program.list!=null&&Program.list.Isbooked(i))
+                    {
+                        roomPanel.BackColor = Color.LightGray;
+
+                        // Make it unclickable
+                        roomPanel.Enabled = false;
+                    }
+                    else
+                    {
+                        roomPanel.BackColor =Color.LightCyan;
+
+                        // Make it clickable
+                        roomPanel.Enabled = true;
+                    }
+                }
+            }
+        }
         private void CountBooked()
         {
             string Status = "occupied";
-            
-            Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from RoomsView where Status = '"+Status+"'", Con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            free = 20 - Convert.ToInt32(dt.Rows[0][0].ToString());
-            Booked = Convert.ToInt32(dt.Rows[0][0].ToString());
-            BPer = (Booked / 20) * 100;
-            FreePer = (free / 20) * 100;
-            BLbl.Text = dt.Rows[0][0].ToString()+" Booked Rooms";//Number of booked rooms(booked label)
-            AVllbl.Text = free + " Free Rooms";//NUmber of free rooms(availible label)
-            AvLbl1.Text = free + "";//this shows the number of free rooms from the freeRoomsProgressbar
-            BProgress.Value = BPer;//shows the progress bar amount for booked spaces
-            AVLProgress.Value = FreePer;//shows the progress bar amount for free spaces
-            FreeRoomsProgress.Value = FreePer;//shows the progress bar amount of the of free spaces left
-
-            Con.Close();
+            if (Program.list != null)
+            {
+                free = 20 - Program.list.TotalBooking;
+                Booked = Program.list.TotalBooking;
+                BPer = (Booked / 20) * 100;
+                FreePer = (free / 20) * 100;
+                BLbl.Text = Booked + " Booked Rooms";//Number of booked rooms(booked label)
+                AVllbl.Text = free + " Free Rooms";//NUmber of free rooms(availible label)
+                AvLbl1.Text = free + "";//this shows the number of free rooms from the freeRoomsProgressbar
+                BProgress.Value = BPer;//shows the progress bar amount for booked spaces
+                AVLProgress.Value = FreePer;//shows the progress bar amount for free spaces
+                FreeRoomsProgress.Value = FreePer;//shows the progress bar amount of the of free spaces left
+            }
         }
         private void CountCustomers()
         { 
-            Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from BookingView", Con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
+           
+            if(Program.list!=null)
+            CustNumLbl.Text = Program.list.TotalBooking.ToString() + " Customers";
             
-            CustNumLbl.Text = dt.Rows[0][0].ToString() + " Customers";
-            
-            Con.Close();
+        
         }
-        private void CountBooking()
-        {
-            Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Booking", Con);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-
-            BookedLbl.Text = dt.Rows[0][0].ToString() + " Bookings";
-
-            Con.Close();
-        }
+        
         int RoomNumber = 0;
-        private void GetCustomer()
-        {
-            Con.Open();
-            SqlCommand cmd = new SqlCommand("Select GuestID from Booking", Con);
-            SqlDataReader rdr;
-            rdr=cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Columns.Add("CusId", typeof(int));
-            dt.Load(rdr);
-            CusIdCb.ValueMember = "CusId";
-            CusIdCb.DataSource = dt;
-            Con.Close() ;
-        }
+      
+        
         string RType;
         int RC;
         private void GetRoomType()
@@ -108,20 +121,7 @@ namespace GuestHouse_GUI
             }
             Con.Close();
         }
-        private void GetCusName()
-        {
-            Con.Open();
-            string Query = "select * from GuestView where GuestID=" + CusIdCb.SelectedValue.ToString() + "";
-            SqlCommand cmd = new SqlCommand(Query, Con);
-            DataTable dt = new DataTable();
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            sda.Fill(dt);
-            foreach(DataRow dr in dt.Rows)
-            {
-                CusNameTb.Text = dr["Full Name"].ToString();
-            }
-            Con.Close();
-        }
+       
         private void Reset()
         {
             RType = "";
@@ -131,15 +131,27 @@ namespace GuestHouse_GUI
        
         private void BookBtn_Click(object sender, EventArgs e)
         {
-            if(CusNameTb.Text == "" || RoomNumber == 0)
+            Guest singleguest=null;
+
+            if (CusNumofDaysTb.Text == "" || RoomNumber == 0||CusNameCb.Text=="")
             {
                 MessageBox.Show("Select a Room and a Customer");
             } else
             {
+                foreach(Guest g in Program.guest)
+                {
+                   
+                    if(g != null&&g.FullName== CusNameCb.Text)
+                    {
+                    singleguest= new Guest(g.FullName,g.PhoneNumber,g.Dob,g.gender);
+
+                    }
+                }
+
                 try
                 {
                     
-                   // list.AddBooking();
+                    Program.list.AddBooking(RoomNumber,singleguest, Program.list.getPrice(RoomNumber) * int.Parse(CusNumofDaysTb.Text));
                 }
                 catch(Exception ex)
                 {
@@ -152,7 +164,7 @@ namespace GuestHouse_GUI
 
         private void CusIdCb_SelectionChangeCommitted(object sender, EventArgs e)
         {
-            GetCusName();
+            //GetCusName();
         }
 
         private void R2_Paint(object sender, PaintEventArgs e)
@@ -352,15 +364,13 @@ namespace GuestHouse_GUI
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Customers obj = new Customers();
-            obj.Show();
+         Program.   objcustomer.Show();
             this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Booking obj = new Booking();
-            obj.Show();
+          Program.  objbooking.Show();
             this.Hide();
         }
 
@@ -371,27 +381,34 @@ namespace GuestHouse_GUI
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
+            Program.objlogin.Show();
             this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            DashBoard obj = new DashBoard();
-            obj.Show();
-            this.Hide();
+       
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Users obj = new Users();
-            obj.Show();
+           Program. objuser.Show();
             this.Hide();
         }
 
         private void AVllbl_Click(object sender, EventArgs e)
         {
+
+        }
+
+        private void DashBoard_Enter(object sender, EventArgs e)
+        {
+          //  populatenamecombo();
+        }
+
+        private void DashBoard_VisibleChanged(object sender, EventArgs e)
+        {
+            populatenamecombo();
 
         }
 
@@ -402,7 +419,9 @@ namespace GuestHouse_GUI
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-            list = new LinkedList();
+           // Program.list = new LinkedProgram.list();
+            populatenamecombo();
+
         }
     }
 }

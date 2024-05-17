@@ -149,36 +149,30 @@ namespace GuestHouse_GUI
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            Users obj = new Users();
-            obj.Show();
-            this.Hide();
+          
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Booking obj = new Booking();
-            obj.Show();
+           Program. objbooking.Show();
             this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Customers obj = new Customers();
-            obj.Show();
+            Program.objcustomer.Show();
             this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
-            DashBoard obj = new DashBoard();
-            obj.Show();
+            Program.objdash.Show();
             this.Hide();
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
+          Program.  objlogin.Show();
             this.Hide();
         }
     }
