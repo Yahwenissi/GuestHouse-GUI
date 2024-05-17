@@ -14,6 +14,9 @@ namespace GuestHouse_GUI
 {
     public partial class DashBoard : Form
     {
+        LinkedList list;
+        Guest guest;
+
         public DashBoard()
         {
             InitializeComponent();
@@ -28,15 +31,15 @@ namespace GuestHouse_GUI
             RoomNumber = 1;
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=NESSI-G\SQL2022;Initial Catalog=GuestHouseDb;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         int free, Booked;
         int BPer, FreePer;
         private void CountBooked()
         {
-            string Status = " Booked";
+            string Status = "occupied";
             
             Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from RoomTbl where RStatus = '"+Status+"'", Con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from RoomsView where Status = '"+Status+"'", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             free = 20 - Convert.ToInt32(dt.Rows[0][0].ToString());
@@ -55,7 +58,7 @@ namespace GuestHouse_GUI
         private void CountCustomers()
         { 
             Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from CustomerTbl", Con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from BookingView", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
             
@@ -66,7 +69,7 @@ namespace GuestHouse_GUI
         private void CountBooking()
         {
             Con.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from BookingTbl", Con);
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from Booking", Con);
             DataTable dt = new DataTable();
             sda.Fill(dt);
 
@@ -78,7 +81,7 @@ namespace GuestHouse_GUI
         private void GetCustomer()
         {
             Con.Open();
-            SqlCommand cmd = new SqlCommand("Select CusId from CustomerTbl", Con);
+            SqlCommand cmd = new SqlCommand("Select GuestID from Booking", Con);
             SqlDataReader rdr;
             rdr=cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -93,29 +96,29 @@ namespace GuestHouse_GUI
         private void GetRoomType()
         {
             Con.Open();
-            string Query = "select * from RoomTbl where RId=" + RoomNumber + "";
+            string Query = "select * from Rooms where RoomNumber=" + RoomNumber + "";
             SqlCommand cmd = new SqlCommand(Query, Con);
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             sda.Fill(dt);
             foreach (DataRow dr in dt.Rows)
             {
-                RType = dr["RType"].ToString();
-                RC = Convert.ToInt32(dr["RCost"].ToString());
+                RType = dr["Type"].ToString();
+                RC = Convert.ToInt32(dr["Price"].ToString());
             }
             Con.Close();
         }
         private void GetCusName()
         {
             Con.Open();
-            string Query = "select * from CustomerTbl where CusId=" + CusIdCb.SelectedValue.ToString() + "";
+            string Query = "select * from GuestView where GuestID=" + CusIdCb.SelectedValue.ToString() + "";
             SqlCommand cmd = new SqlCommand(Query, Con);
             DataTable dt = new DataTable();
             SqlDataAdapter sda = new SqlDataAdapter(cmd);
             sda.Fill(dt);
             foreach(DataRow dr in dt.Rows)
             {
-                CusNameTb.Text = dr["CusName"].ToString();
+                CusNameTb.Text = dr["Full Name"].ToString();
             }
             Con.Close();
         }
@@ -125,28 +128,7 @@ namespace GuestHouse_GUI
             RC = 0;
             RoomNumber = 0;
         }
-        private void UpdateRoom()
-        {
-            string Status = "Booked";
-            try
-                {
-
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("update RoomTbl set RStatus = @RS where RId = @RKey", Con);
-                    cmd.Parameters.AddWithValue("@RS", Status);
-                    cmd.Parameters.AddWithValue("@RKey", RoomNumber);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Room Updated!");
-                    Con.Close();
-                    Reset();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            
-        }
+       
         private void BookBtn_Click(object sender, EventArgs e)
         {
             if(CusNameTb.Text == "" || RoomNumber == 0)
@@ -157,26 +139,14 @@ namespace GuestHouse_GUI
                 try
                 {
                     
-                    GetRoomType();
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("insert into BookingTbl(CusId,CusName, RId, RNum, RType, BCost) values(@CI,@CN,@RI,@RN,@RT,@RC)", Con);
-                    cmd.Parameters.AddWithValue("@CI", CusIdCb.SelectedValue.ToString());
-                    cmd.Parameters.AddWithValue("@CN", CusNameTb.Text);
-                    cmd.Parameters.AddWithValue("@RI", RoomNumber);
-                    cmd.Parameters.AddWithValue("@RN", RoomNumber);
-                    cmd.Parameters.AddWithValue("@RT", RType);
-                    cmd.Parameters.AddWithValue("@RC", RC);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Room Booked");
-                    Reset();
-                    Con.Close();
-                    UpdateRoom();
-                    
+                   // list.AddBooking();
                 }
                 catch(Exception ex)
                 {
                     MessageBox.Show(ex.Message);
                 }
+
+                
             }
         }
 
@@ -432,7 +402,7 @@ namespace GuestHouse_GUI
 
         private void DashBoard_Load(object sender, EventArgs e)
         {
-
+            list = new LinkedList();
         }
     }
 }

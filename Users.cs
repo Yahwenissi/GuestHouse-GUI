@@ -19,7 +19,7 @@ namespace GuestHouse_GUI
             InitializeComponent();
             showUsers();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=NESSI-G\SQL2022;Initial Catalog=GuestHouseDb;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         private void showUsers()
         {
             Con.Open();

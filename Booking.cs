@@ -18,11 +18,11 @@ namespace GuestHouse_GUI
             InitializeComponent();
             showBookings();
         }
-        SqlConnection Con = new SqlConnection(@"Data Source=NESSI-G\SQL2022;Initial Catalog=GuestHouseDb;Integrated Security=True");
+        SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         private void showBookings()
         {
             Con.Open();
-            string Query = "select * from BookingTbl";
+            string Query = "select * from BookingView";
             SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
