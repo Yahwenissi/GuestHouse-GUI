@@ -23,6 +23,8 @@ namespace GuestHouse_GUI
         {
            Booking curr=Program.list.Head;
             BookingDGV.Rows.Clear();
+            nametb.Text = "";
+            Roomnumcb.Text = string.Empty;
 
             while (curr!=null)
             {
@@ -40,6 +42,7 @@ namespace GuestHouse_GUI
         private void guna2Button1_Click_1(object sender, EventArgs e)
         {
             showBookings();
+            
         }
 
         private void RTypeCb_SelectionChangeCommitted(object sender, EventArgs e)
@@ -80,16 +83,7 @@ namespace GuestHouse_GUI
             Application.Exit();
         }
 
-        private void BookingDGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
-        {
-            try {
-                nametb.Text = BookingDGV.SelectedRows[0].Cells[0].Value.ToString();
-                Roomnumcb.Text = BookingDGV.SelectedRows[0].Cells[6].Value.ToString();
-            }catch(ArgumentOutOfRangeException ex)
-            {
-
-            }
-            }
+       
 
         private void bookdelbtn_Click(object sender, EventArgs e)
         {
@@ -112,6 +106,25 @@ namespace GuestHouse_GUI
         private void Bookings_Load(object sender, EventArgs e)
         {
             showBookings();
+        }
+
+        private void BookingDGV_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
+        {
+            try
+            {
+                nametb.Text = BookingDGV.SelectedRows[0].Cells[0].Value.ToString();
+                Roomnumcb.Text = BookingDGV.SelectedRows[0].Cells[6].Value.ToString();
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+
+            }
+        
+    }
+
+        private void Bookings_Activated(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -146,39 +146,8 @@ namespace GuestHouse_GUI
 
             return age;
         }
-        private void DeleteBtn_Click(object sender, EventArgs e)
-        {
-      /*      if (key == 0)
-            {
-                MessageBox.Show("Select Customer");
-            }
-            else
-            {
-                try
-                {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("delete from CustomerTbl where CusId = @Ckey", Con);
-                    cmd.Parameters.AddWithValue("@Ckey", key);
 
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Deleted");
-                    Con.Close();
-                    showCustomers();
-                    Reset();
-
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
-            }*/
-        }
-    //    int key = 0;
-        private void CustomersDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            
-        }
-
+      
 
 
 
