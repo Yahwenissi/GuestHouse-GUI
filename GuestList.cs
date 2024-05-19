@@ -647,13 +647,7 @@ public class Guest
                     current.Guest.Age = guest.Age;
                 if(!string.IsNullOrEmpty(guest.gender))
                     current.Guest.gender=guest.gender;
-                /*     if (!string.IsNullOrEmpty(guest.CheckInDate))
-                         current.Guest.CheckInDate = guest.CheckInDate;
-                     if (!string.IsNullOrEmpty(guest.CheckOutDate))
-                         current.Guest.CheckOutDate = guest.CheckOutDate;
-
-                     if (total.HasValue)
-                         current.TotalPrice = total;*/
+           
 
                 found = true;
 
