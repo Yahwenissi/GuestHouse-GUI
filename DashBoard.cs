@@ -127,7 +127,7 @@ namespace GuestHouse_GUI
                    
                     if(g != null&&g.FullName== CusNameCb.Text)
                     {
-                    singleguest= new Guest(g.FullName,g.PhoneNumber,g.Dob,g.gender);
+                    singleguest= new Guest(g.FullName,g.PhoneNumber,g.Dob,g.Age,g.gender);
                         singleguest.CheckInDate = DateTime.Now.ToString("yyyy-MM-dd");
                         singleguest.CheckOutDate = DateTime.Parse(singleguest.CheckInDate).AddDays(int.Parse(CusNumofDaysTb.Text)).ToString("yyyy-MM-dd");
 

@@ -108,5 +108,10 @@ namespace GuestHouse_GUI
             showBookings();
 
         }
+
+        private void Bookings_Load(object sender, EventArgs e)
+        {
+            showBookings();
+        }
     }
 }

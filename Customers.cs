@@ -74,7 +74,7 @@ namespace GuestHouse_GUI
                     return;
                 }
 
-                Program.guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(), CusGenCb.Text);
+                Program.guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(),CalculateAge(CusDOB.Value.Date), CusGenCb.Text);
                 track += 1;
              //   MessageBox.Show("Customer Saved");
                 loadtable();
@@ -84,46 +84,54 @@ namespace GuestHouse_GUI
         private void EditBtn_Click(object sender, EventArgs e)
         {
             DateTime dob;
-            if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString()||roomnum==0)
+
+            // Check if all required fields are empty or room number is zero
+            if (string.IsNullOrWhiteSpace(CusNameTb.Text) &&
+                string.IsNullOrWhiteSpace(CusPhoneTb.Text) &&
+                CusGenCb.SelectedIndex == -1 &&
+                CusDOB.Text == DateTime.Now.ToString() ||
+                roomnum == 0)
             {
                 MessageBox.Show("Missing Information");
+                return;
             }
-            else
+
+            Guest gue = new Guest();
+
+            // Update Guest properties based on input fields
+            if (!string.IsNullOrWhiteSpace(CusNameTb.Text))
             {
-                Guest gue = new Guest();
-                if (CusNameTb.Text != "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString())
-                    gue.FullName = CusNameTb.Text;
-                if (CusNameTb.Text == "" && CusPhoneTb.Text != "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString())
-                    gue.PhoneNumber= CusPhoneTb.Text;
-                if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex != -1 && CusDOB.Text == DateTime.Now.ToString())
-                    gue.gender=CusGenCb.Text;
-                if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text != DateTime.Now.ToString())
-                    gue.Dob=CusDOB.Text;
-                 if (CusNameTb.Text != "" && CusPhoneTb.Text != "" && CusGenCb.SelectedIndex != -1 && CusDOB.Text != DateTime.Now.ToString())
-                {
-                    gue.FullName = CusNameTb.Text;
-                    gue.PhoneNumber = CusPhoneTb.Text;
-                    gue.gender = CusGenCb.Text;
-                   
-                    if (DateTime.TryParse(CusDOB.Text, out dob))
-                    {
-                        gue.Dob = dob.ToString("yyyy/MM/dd");
-                      
-                        gue.Age=CalculateAge(dob);
-                        
-                    }
-                    
-
-
-
-                }
-
-
-                Program.list.ModifyGuest(gue,roomnum);
-                loadtable();
-                showCustomers();
+                gue.FullName = CusNameTb.Text;
             }
+
+            if (!string.IsNullOrWhiteSpace(CusPhoneTb.Text))
+            {
+                gue.PhoneNumber = CusPhoneTb.Text;
+            }
+
+            if (CusGenCb.SelectedIndex != -1)
+            {
+                gue.gender = CusGenCb.SelectedItem.ToString();
+            }
+
+            if (DateTime.TryParse(CusDOB.Text, out dob))
+            {
+                gue.Dob = dob.ToString("yyyy/MM/dd");
+                gue.Age = CalculateAge(dob);
+            }
+            else if (CusDOB.Text != DateTime.Now.ToString())
+            {
+                MessageBox.Show("Invalid Date of Birth");
+                return;
+            }
+
+            // Modify guest information and update the UI
+            Program.list.ModifyGuest(gue, roomnum);
+            loadtable();
+            showCustomers();
         }
+
+
         public int CalculateAge(DateTime dob)
         {
             // Get the current date
@@ -212,13 +220,22 @@ namespace GuestHouse_GUI
             Application.Exit();
         }
 
-        private void CustomersDGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
+        
+
+        private void Customers_Activated(object sender, EventArgs e)
         {
+            loadtable();
+            showCustomers();
+        }
+
+        private void CustomersDGV_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+
             try
             {
-                if (CustomersDGV.Rows.Count > 0)
+                if (CustomersDGV.Rows.Count < 0)
                 {
-                   // MessageBox.Show("List is Empty!");
+                    // MessageBox.Show("List is Empty!");
                 }
                 else
                 {
@@ -229,9 +246,14 @@ namespace GuestHouse_GUI
                     roomnum = int.Parse(CustomersDGV.SelectedRows[0].Cells[5].Value.ToString());
 
                 }
-            }catch(NullReferenceException ex)
+            }
+            catch (NullReferenceException ex)
             {
                 MessageBox.Show("List is Empty!");
+            }
+            catch (ArgumentOutOfRangeException ex)
+            {
+
             }
         }
 

@@ -29,11 +29,12 @@ public class Guest
             this.gender = gender;
             Dob = dob;
         }
-        public Guest(string fullName, string phoneNumber, string dob, string gender)
+        public Guest(string fullName, string phoneNumber, string dob, int? age,string gender)
         {
             FullName = fullName;
             PhoneNumber = phoneNumber;
             Dob = dob;
+            Age=age;
             this.gender = gender;
             status = "pending";
 
@@ -644,6 +645,8 @@ public class Guest
                     current.Guest.Dob = guest.Dob;
                 if (guest.Age.HasValue)
                     current.Guest.Age = guest.Age;
+                if(!string.IsNullOrEmpty(guest.gender))
+                    current.Guest.gender=guest.gender;
                 /*     if (!string.IsNullOrEmpty(guest.CheckInDate))
                          current.Guest.CheckInDate = guest.CheckInDate;
                      if (!string.IsNullOrEmpty(guest.CheckOutDate))
