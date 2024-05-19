@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashBoard));
             this.Panel1 = new System.Windows.Forms.Panel();
+            this.roomnumtb = new System.Windows.Forms.Label();
             this.label41 = new System.Windows.Forms.Label();
             this.label39 = new System.Windows.Forms.Label();
             this.BookBtn = new Guna.UI2.WinForms.Guna2Button();
@@ -144,8 +145,68 @@
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.roomnumtb = new System.Windows.Forms.TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guestBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.label25 = new System.Windows.Forms.Label();
+            this.label26 = new System.Windows.Forms.Label();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.label42 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
+            this.label44 = new System.Windows.Forms.Label();
+            this.label45 = new System.Windows.Forms.Label();
+            this.label46 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
+            this.label48 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label50 = new System.Windows.Forms.Label();
+            this.label51 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label58 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label61 = new System.Windows.Forms.Label();
+            this.label62 = new System.Windows.Forms.Label();
+            this.label63 = new System.Windows.Forms.Label();
+            this.label64 = new System.Windows.Forms.Label();
+            this.label65 = new System.Windows.Forms.Label();
+            this.label66 = new System.Windows.Forms.Label();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.R19.SuspendLayout();
@@ -190,6 +251,7 @@
             // Panel1
             // 
             this.Panel1.BackColor = System.Drawing.Color.White;
+            this.Panel1.Controls.Add(this.guna2Button1);
             this.Panel1.Controls.Add(this.roomnumtb);
             this.Panel1.Controls.Add(this.label41);
             this.Panel1.Controls.Add(this.label39);
@@ -202,6 +264,17 @@
             this.Panel1.Size = new System.Drawing.Size(819, 833);
             this.Panel1.TabIndex = 0;
             this.Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.Panel1_Paint);
+            // 
+            // roomnumtb
+            // 
+            this.roomnumtb.AutoSize = true;
+            this.roomnumtb.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.roomnumtb.ForeColor = System.Drawing.Color.Black;
+            this.roomnumtb.Location = new System.Drawing.Point(122, 309);
+            this.roomnumtb.Name = "roomnumtb";
+            this.roomnumtb.Size = new System.Drawing.Size(37, 32);
+            this.roomnumtb.TabIndex = 100;
+            this.roomnumtb.Text = "rn";
             // 
             // label41
             // 
@@ -320,6 +393,9 @@
             this.R19.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R19.BorderRadius = 10;
             this.R19.BorderThickness = 1;
+            this.R19.Controls.Add(this.label80);
+            this.R19.Controls.Add(this.label38);
+            this.R19.Controls.Add(this.label40);
             this.R19.Controls.Add(this.R19lbl);
             this.R19.Controls.Add(this.guna2Panel3);
             this.R19.Location = new System.Drawing.Point(555, 739);
@@ -332,11 +408,11 @@
             // R19lbl
             // 
             this.R19lbl.AutoSize = true;
-            this.R19lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R19lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R19lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R19lbl.Location = new System.Drawing.Point(47, 31);
+            this.R19lbl.Location = new System.Drawing.Point(9, 5);
             this.R19lbl.Name = "R19lbl";
-            this.R19lbl.Size = new System.Drawing.Size(114, 27);
+            this.R19lbl.Size = new System.Drawing.Size(99, 25);
             this.R19lbl.TabIndex = 103;
             this.R19lbl.Text = "Room 19";
             this.R19lbl.Click += new System.EventHandler(this.R19lbl_Click);
@@ -367,6 +443,9 @@
             this.R20.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R20.BorderRadius = 10;
             this.R20.BorderThickness = 1;
+            this.R20.Controls.Add(this.label81);
+            this.R20.Controls.Add(this.label54);
+            this.R20.Controls.Add(this.label55);
             this.R20.Controls.Add(this.R20lbl);
             this.R20.Controls.Add(this.guna2Panel7);
             this.R20.Location = new System.Drawing.Point(760, 739);
@@ -379,11 +458,11 @@
             // R20lbl
             // 
             this.R20lbl.AutoSize = true;
-            this.R20lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R20lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R20lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R20lbl.Location = new System.Drawing.Point(46, 31);
+            this.R20lbl.Location = new System.Drawing.Point(3, 4);
             this.R20lbl.Name = "R20lbl";
-            this.R20lbl.Size = new System.Drawing.Size(114, 27);
+            this.R20lbl.Size = new System.Drawing.Size(99, 25);
             this.R20lbl.TabIndex = 102;
             this.R20lbl.Text = "Room 20";
             this.R20lbl.Click += new System.EventHandler(this.R20lbl_Click);
@@ -403,6 +482,9 @@
             this.R18.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R18.BorderRadius = 10;
             this.R18.BorderThickness = 1;
+            this.R18.Controls.Add(this.label79);
+            this.R18.Controls.Add(this.label60);
+            this.R18.Controls.Add(this.label61);
             this.R18.Controls.Add(this.R18lbl);
             this.R18.Controls.Add(this.guna2Panel15);
             this.R18.Location = new System.Drawing.Point(359, 739);
@@ -415,11 +497,11 @@
             // R18lbl
             // 
             this.R18lbl.AutoSize = true;
-            this.R18lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R18lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R18lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R18lbl.Location = new System.Drawing.Point(48, 31);
+            this.R18lbl.Location = new System.Drawing.Point(11, 5);
             this.R18lbl.Name = "R18lbl";
-            this.R18lbl.Size = new System.Drawing.Size(114, 27);
+            this.R18lbl.Size = new System.Drawing.Size(99, 25);
             this.R18lbl.TabIndex = 104;
             this.R18lbl.Text = "Room 18";
             this.R18lbl.Click += new System.EventHandler(this.R18lbl_Click);
@@ -439,6 +521,9 @@
             this.R17.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R17.BorderRadius = 10;
             this.R17.BorderThickness = 1;
+            this.R17.Controls.Add(this.label78);
+            this.R17.Controls.Add(this.label36);
+            this.R17.Controls.Add(this.label37);
             this.R17.Controls.Add(this.R17lbl);
             this.R17.Controls.Add(this.guna2Panel11);
             this.R17.Location = new System.Drawing.Point(156, 739);
@@ -451,11 +536,11 @@
             // R17lbl
             // 
             this.R17lbl.AutoSize = true;
-            this.R17lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R17lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R17lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R17lbl.Location = new System.Drawing.Point(49, 31);
+            this.R17lbl.Location = new System.Drawing.Point(17, 5);
             this.R17lbl.Name = "R17lbl";
-            this.R17lbl.Size = new System.Drawing.Size(114, 27);
+            this.R17lbl.Size = new System.Drawing.Size(99, 25);
             this.R17lbl.TabIndex = 101;
             this.R17lbl.Text = "Room 17";
             this.R17lbl.Click += new System.EventHandler(this.R17lbl_Click);
@@ -475,6 +560,9 @@
             this.R15.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R15.BorderRadius = 10;
             this.R15.BorderThickness = 1;
+            this.R15.Controls.Add(this.label76);
+            this.R15.Controls.Add(this.label34);
+            this.R15.Controls.Add(this.label35);
             this.R15.Controls.Add(this.R15lbl);
             this.R15.Controls.Add(this.guna2Panel30);
             this.R15.Location = new System.Drawing.Point(555, 645);
@@ -487,11 +575,11 @@
             // R15lbl
             // 
             this.R15lbl.AutoSize = true;
-            this.R15lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R15lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R15lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R15lbl.Location = new System.Drawing.Point(47, 31);
+            this.R15lbl.Location = new System.Drawing.Point(11, 5);
             this.R15lbl.Name = "R15lbl";
-            this.R15lbl.Size = new System.Drawing.Size(114, 27);
+            this.R15lbl.Size = new System.Drawing.Size(99, 25);
             this.R15lbl.TabIndex = 103;
             this.R15lbl.Text = "Room 15";
             this.R15lbl.Click += new System.EventHandler(this.R15lbl_Click);
@@ -511,6 +599,9 @@
             this.R16.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R16.BorderRadius = 10;
             this.R16.BorderThickness = 1;
+            this.R16.Controls.Add(this.label77);
+            this.R16.Controls.Add(this.label52);
+            this.R16.Controls.Add(this.label53);
             this.R16.Controls.Add(this.R16lbl);
             this.R16.Controls.Add(this.guna2Panel32);
             this.R16.Location = new System.Drawing.Point(760, 645);
@@ -523,11 +614,11 @@
             // R16lbl
             // 
             this.R16lbl.AutoSize = true;
-            this.R16lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R16lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R16lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R16lbl.Location = new System.Drawing.Point(46, 31);
+            this.R16lbl.Location = new System.Drawing.Point(3, 5);
             this.R16lbl.Name = "R16lbl";
-            this.R16lbl.Size = new System.Drawing.Size(114, 27);
+            this.R16lbl.Size = new System.Drawing.Size(99, 25);
             this.R16lbl.TabIndex = 102;
             this.R16lbl.Text = "Room 16";
             this.R16lbl.Click += new System.EventHandler(this.R16lbl_Click);
@@ -547,6 +638,9 @@
             this.R13.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R13.BorderRadius = 10;
             this.R13.BorderThickness = 1;
+            this.R13.Controls.Add(this.label74);
+            this.R13.Controls.Add(this.label32);
+            this.R13.Controls.Add(this.label33);
             this.R13.Controls.Add(this.R13lbl);
             this.R13.Controls.Add(this.guna2Panel26);
             this.R13.Location = new System.Drawing.Point(156, 645);
@@ -559,11 +653,11 @@
             // R13lbl
             // 
             this.R13lbl.AutoSize = true;
-            this.R13lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R13lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R13lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R13lbl.Location = new System.Drawing.Point(49, 31);
+            this.R13lbl.Location = new System.Drawing.Point(11, 5);
             this.R13lbl.Name = "R13lbl";
-            this.R13lbl.Size = new System.Drawing.Size(114, 27);
+            this.R13lbl.Size = new System.Drawing.Size(99, 25);
             this.R13lbl.TabIndex = 101;
             this.R13lbl.Text = "Room 13";
             this.R13lbl.Click += new System.EventHandler(this.R13lbl_Click);
@@ -708,6 +802,9 @@
             this.R14.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R14.BorderRadius = 10;
             this.R14.BorderThickness = 1;
+            this.R14.Controls.Add(this.label75);
+            this.R14.Controls.Add(this.label50);
+            this.R14.Controls.Add(this.label51);
             this.R14.Controls.Add(this.R14lbl);
             this.R14.Controls.Add(this.guna2Panel28);
             this.R14.Location = new System.Drawing.Point(359, 645);
@@ -720,11 +817,11 @@
             // R14lbl
             // 
             this.R14lbl.AutoSize = true;
-            this.R14lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R14lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R14lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R14lbl.Location = new System.Drawing.Point(48, 31);
+            this.R14lbl.Location = new System.Drawing.Point(9, 6);
             this.R14lbl.Name = "R14lbl";
-            this.R14lbl.Size = new System.Drawing.Size(114, 27);
+            this.R14lbl.Size = new System.Drawing.Size(99, 25);
             this.R14lbl.TabIndex = 104;
             this.R14lbl.Text = "Room 14";
             this.R14lbl.Click += new System.EventHandler(this.R14lbl_Click);
@@ -744,6 +841,9 @@
             this.R9.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R9.BorderRadius = 10;
             this.R9.BorderThickness = 1;
+            this.R9.Controls.Add(this.label70);
+            this.R9.Controls.Add(this.label28);
+            this.R9.Controls.Add(this.label29);
             this.R9.Controls.Add(this.R9lbl);
             this.R9.Controls.Add(this.guna2Panel18);
             this.R9.Location = new System.Drawing.Point(156, 551);
@@ -756,11 +856,11 @@
             // R9lbl
             // 
             this.R9lbl.AutoSize = true;
-            this.R9lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R9lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R9lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R9lbl.Location = new System.Drawing.Point(49, 31);
+            this.R9lbl.Location = new System.Drawing.Point(11, 2);
             this.R9lbl.Name = "R9lbl";
-            this.R9lbl.Size = new System.Drawing.Size(101, 27);
+            this.R9lbl.Size = new System.Drawing.Size(88, 25);
             this.R9lbl.TabIndex = 101;
             this.R9lbl.Text = "Room 9";
             this.R9lbl.Click += new System.EventHandler(this.R9lbl_Click);
@@ -780,6 +880,9 @@
             this.R8.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R8.BorderRadius = 10;
             this.R8.BorderThickness = 1;
+            this.R8.Controls.Add(this.label69);
+            this.R8.Controls.Add(this.label46);
+            this.R8.Controls.Add(this.label47);
             this.R8.Controls.Add(this.R8lbl);
             this.R8.Controls.Add(this.guna2Panel14);
             this.R8.Location = new System.Drawing.Point(760, 457);
@@ -792,11 +895,11 @@
             // R8lbl
             // 
             this.R8lbl.AutoSize = true;
-            this.R8lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R8lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R8lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R8lbl.Location = new System.Drawing.Point(46, 31);
+            this.R8lbl.Location = new System.Drawing.Point(9, 5);
             this.R8lbl.Name = "R8lbl";
-            this.R8lbl.Size = new System.Drawing.Size(101, 27);
+            this.R8lbl.Size = new System.Drawing.Size(88, 25);
             this.R8lbl.TabIndex = 102;
             this.R8lbl.Text = "Room 8";
             this.R8lbl.Click += new System.EventHandler(this.R8lbl_Click);
@@ -816,7 +919,10 @@
             this.R7.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R7.BorderRadius = 10;
             this.R7.BorderThickness = 1;
+            this.R7.Controls.Add(this.label68);
+            this.R7.Controls.Add(this.label26);
             this.R7.Controls.Add(this.R7lbl);
+            this.R7.Controls.Add(this.label27);
             this.R7.Controls.Add(this.guna2Panel12);
             this.R7.Location = new System.Drawing.Point(555, 457);
             this.R7.Name = "R7";
@@ -828,11 +934,11 @@
             // R7lbl
             // 
             this.R7lbl.AutoSize = true;
-            this.R7lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R7lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R7lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R7lbl.Location = new System.Drawing.Point(47, 31);
+            this.R7lbl.Location = new System.Drawing.Point(11, 4);
             this.R7lbl.Name = "R7lbl";
-            this.R7lbl.Size = new System.Drawing.Size(101, 27);
+            this.R7lbl.Size = new System.Drawing.Size(88, 25);
             this.R7lbl.TabIndex = 103;
             this.R7lbl.Text = "Room 7";
             this.R7lbl.Click += new System.EventHandler(this.R7lbl_Click);
@@ -852,6 +958,9 @@
             this.R5.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R5.BorderRadius = 10;
             this.R5.BorderThickness = 1;
+            this.R5.Controls.Add(this.label66);
+            this.R5.Controls.Add(this.label24);
+            this.R5.Controls.Add(this.label25);
             this.R5.Controls.Add(this.R5lbl);
             this.R5.Controls.Add(this.guna2Panel8);
             this.R5.Location = new System.Drawing.Point(156, 457);
@@ -864,11 +973,11 @@
             // R5lbl
             // 
             this.R5lbl.AutoSize = true;
-            this.R5lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R5lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R5lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R5lbl.Location = new System.Drawing.Point(49, 31);
+            this.R5lbl.Location = new System.Drawing.Point(15, 4);
             this.R5lbl.Name = "R5lbl";
-            this.R5lbl.Size = new System.Drawing.Size(101, 27);
+            this.R5lbl.Size = new System.Drawing.Size(88, 25);
             this.R5lbl.TabIndex = 101;
             this.R5lbl.Text = "Room 5";
             this.R5lbl.Click += new System.EventHandler(this.R5lbl_Click);
@@ -898,6 +1007,9 @@
             this.R11.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R11.BorderRadius = 10;
             this.R11.BorderThickness = 1;
+            this.R11.Controls.Add(this.label72);
+            this.R11.Controls.Add(this.label30);
+            this.R11.Controls.Add(this.label31);
             this.R11.Controls.Add(this.R11lbl);
             this.R11.Controls.Add(this.guna2Panel20);
             this.R11.Location = new System.Drawing.Point(555, 551);
@@ -910,11 +1022,11 @@
             // R11lbl
             // 
             this.R11lbl.AutoSize = true;
-            this.R11lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R11lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R11lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R11lbl.Location = new System.Drawing.Point(47, 31);
+            this.R11lbl.Location = new System.Drawing.Point(11, 2);
             this.R11lbl.Name = "R11lbl";
-            this.R11lbl.Size = new System.Drawing.Size(114, 27);
+            this.R11lbl.Size = new System.Drawing.Size(99, 25);
             this.R11lbl.TabIndex = 103;
             this.R11lbl.Text = "Room 11";
             this.R11lbl.Click += new System.EventHandler(this.R11lbl_Click);
@@ -934,6 +1046,9 @@
             this.R12.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R12.BorderRadius = 10;
             this.R12.BorderThickness = 1;
+            this.R12.Controls.Add(this.label73);
+            this.R12.Controls.Add(this.label58);
+            this.R12.Controls.Add(this.label59);
             this.R12.Controls.Add(this.R12lbl);
             this.R12.Controls.Add(this.guna2Panel22);
             this.R12.Location = new System.Drawing.Point(760, 551);
@@ -946,11 +1061,11 @@
             // R12lbl
             // 
             this.R12lbl.AutoSize = true;
-            this.R12lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R12lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R12lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R12lbl.Location = new System.Drawing.Point(46, 31);
+            this.R12lbl.Location = new System.Drawing.Point(8, 2);
             this.R12lbl.Name = "R12lbl";
-            this.R12lbl.Size = new System.Drawing.Size(114, 27);
+            this.R12lbl.Size = new System.Drawing.Size(99, 25);
             this.R12lbl.TabIndex = 102;
             this.R12lbl.Text = "Room 12";
             this.R12lbl.Click += new System.EventHandler(this.R12lbl_Click);
@@ -970,6 +1085,9 @@
             this.R10.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R10.BorderRadius = 10;
             this.R10.BorderThickness = 1;
+            this.R10.Controls.Add(this.label71);
+            this.R10.Controls.Add(this.label48);
+            this.R10.Controls.Add(this.label49);
             this.R10.Controls.Add(this.R10lbl);
             this.R10.Controls.Add(this.guna2Panel16);
             this.R10.Location = new System.Drawing.Point(359, 551);
@@ -982,11 +1100,11 @@
             // R10lbl
             // 
             this.R10lbl.AutoSize = true;
-            this.R10lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R10lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R10lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R10lbl.Location = new System.Drawing.Point(49, 31);
+            this.R10lbl.Location = new System.Drawing.Point(11, 2);
             this.R10lbl.Name = "R10lbl";
-            this.R10lbl.Size = new System.Drawing.Size(114, 27);
+            this.R10lbl.Size = new System.Drawing.Size(99, 25);
             this.R10lbl.TabIndex = 104;
             this.R10lbl.Text = "Room 10";
             this.R10lbl.Click += new System.EventHandler(this.R10lbl_Click);
@@ -1017,6 +1135,9 @@
             this.R6.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R6.BorderRadius = 10;
             this.R6.BorderThickness = 1;
+            this.R6.Controls.Add(this.label67);
+            this.R6.Controls.Add(this.label56);
+            this.R6.Controls.Add(this.label57);
             this.R6.Controls.Add(this.R6lbl);
             this.R6.Controls.Add(this.guna2Panel10);
             this.R6.Location = new System.Drawing.Point(359, 457);
@@ -1029,11 +1150,11 @@
             // R6lbl
             // 
             this.R6lbl.AutoSize = true;
-            this.R6lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R6lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R6lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R6lbl.Location = new System.Drawing.Point(48, 31);
+            this.R6lbl.Location = new System.Drawing.Point(11, 4);
             this.R6lbl.Name = "R6lbl";
-            this.R6lbl.Size = new System.Drawing.Size(101, 27);
+            this.R6lbl.Size = new System.Drawing.Size(88, 25);
             this.R6lbl.TabIndex = 104;
             this.R6lbl.Text = "Room 6";
             this.R6lbl.Click += new System.EventHandler(this.R6lbl_Click);
@@ -1053,7 +1174,10 @@
             this.R3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R3.BorderRadius = 10;
             this.R3.BorderThickness = 1;
+            this.R3.Controls.Add(this.label64);
+            this.R3.Controls.Add(this.label13);
             this.R3.Controls.Add(this.R3lbl);
+            this.R3.Controls.Add(this.label12);
             this.R3.Controls.Add(this.CusGenCb);
             this.R3.Controls.Add(this.guna2Panel6);
             this.R3.Location = new System.Drawing.Point(555, 363);
@@ -1066,11 +1190,11 @@
             // R3lbl
             // 
             this.R3lbl.AutoSize = true;
-            this.R3lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R3lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R3lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R3lbl.Location = new System.Drawing.Point(47, 30);
+            this.R3lbl.Location = new System.Drawing.Point(11, 2);
             this.R3lbl.Name = "R3lbl";
-            this.R3lbl.Size = new System.Drawing.Size(101, 27);
+            this.R3lbl.Size = new System.Drawing.Size(88, 25);
             this.R3lbl.TabIndex = 104;
             this.R3lbl.Text = "Room 3";
             this.R3lbl.Click += new System.EventHandler(this.R3lbl_Click);
@@ -1102,6 +1226,9 @@
             this.R4.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R4.BorderRadius = 10;
             this.R4.BorderThickness = 1;
+            this.R4.Controls.Add(this.label65);
+            this.R4.Controls.Add(this.label44);
+            this.R4.Controls.Add(this.label45);
             this.R4.Controls.Add(this.R4lbl);
             this.R4.Controls.Add(this.guna2Panel4);
             this.R4.Location = new System.Drawing.Point(760, 363);
@@ -1114,11 +1241,11 @@
             // R4lbl
             // 
             this.R4lbl.AutoSize = true;
-            this.R4lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R4lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R4lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R4lbl.Location = new System.Drawing.Point(46, 30);
+            this.R4lbl.Location = new System.Drawing.Point(9, 2);
             this.R4lbl.Name = "R4lbl";
-            this.R4lbl.Size = new System.Drawing.Size(101, 27);
+            this.R4lbl.Size = new System.Drawing.Size(88, 25);
             this.R4lbl.TabIndex = 103;
             this.R4lbl.Text = "Room 4";
             this.R4lbl.Click += new System.EventHandler(this.R4lbl_Click);
@@ -1138,6 +1265,9 @@
             this.R2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R2.BorderRadius = 10;
             this.R2.BorderThickness = 1;
+            this.R2.Controls.Add(this.label63);
+            this.R2.Controls.Add(this.label42);
+            this.R2.Controls.Add(this.label43);
             this.R2.Controls.Add(this.R2lbl);
             this.R2.Controls.Add(this.guna2Panel2);
             this.R2.Location = new System.Drawing.Point(359, 363);
@@ -1150,11 +1280,11 @@
             // R2lbl
             // 
             this.R2lbl.AutoSize = true;
-            this.R2lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R2lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R2lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R2lbl.Location = new System.Drawing.Point(48, 30);
+            this.R2lbl.Location = new System.Drawing.Point(11, 2);
             this.R2lbl.Name = "R2lbl";
-            this.R2lbl.Size = new System.Drawing.Size(101, 27);
+            this.R2lbl.Size = new System.Drawing.Size(88, 25);
             this.R2lbl.TabIndex = 105;
             this.R2lbl.Text = "Room 2";
             this.R2lbl.Click += new System.EventHandler(this.R2lbl_Click);
@@ -1185,6 +1315,9 @@
             this.R1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
             this.R1.BorderRadius = 10;
             this.R1.BorderThickness = 1;
+            this.R1.Controls.Add(this.label62);
+            this.R1.Controls.Add(this.label22);
+            this.R1.Controls.Add(this.label23);
             this.R1.Controls.Add(this.R1lbl);
             this.R1.Controls.Add(this.guna2Panel24);
             this.R1.Location = new System.Drawing.Point(156, 363);
@@ -1192,16 +1325,15 @@
             this.R1.Size = new System.Drawing.Size(198, 88);
             this.R1.TabIndex = 77;
             this.R1.Click += new System.EventHandler(this.R1_Click);
-            this.R1.Paint += new System.Windows.Forms.PaintEventHandler(this.R1_Paint);
             // 
             // R1lbl
             // 
             this.R1lbl.AutoSize = true;
-            this.R1lbl.Font = new System.Drawing.Font("Century Schoolbook", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.R1lbl.Font = new System.Drawing.Font("Century Schoolbook", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R1lbl.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(68)))), ((int)(((byte)(249)))));
-            this.R1lbl.Location = new System.Drawing.Point(44, 31);
+            this.R1lbl.Location = new System.Drawing.Point(11, 2);
             this.R1lbl.Name = "R1lbl";
-            this.R1lbl.Size = new System.Drawing.Size(101, 27);
+            this.R1lbl.Size = new System.Drawing.Size(88, 25);
             this.R1lbl.TabIndex = 100;
             this.R1lbl.Text = "Room 1";
             this.R1lbl.Click += new System.EventHandler(this.R1lbl_Click);
@@ -1487,18 +1619,687 @@
             // 
             this.guna2Elipse1.BorderRadius = 35;
             // 
-            // roomnumtb
+            // guna2Button1
             // 
-            this.roomnumtb.Enabled = false;
-            this.roomnumtb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.roomnumtb.Location = new System.Drawing.Point(131, 309);
-            this.roomnumtb.Name = "roomnumtb";
-            this.roomnumtb.Size = new System.Drawing.Size(60, 32);
-            this.roomnumtb.TabIndex = 109;
+            this.guna2Button1.BackColor = System.Drawing.Color.White;
+            this.guna2Button1.BorderRadius = 15;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.Gold;
+            this.guna2Button1.Font = new System.Drawing.Font("Britannic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Location = new System.Drawing.Point(609, 309);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(124, 32);
+            this.guna2Button1.TabIndex = 109;
+            this.guna2Button1.Text = "Refresh";
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guestBindingSource
             // 
             this.guestBindingSource.DataSource = typeof(Guest);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label12.Location = new System.Drawing.Point(12, 24);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(58, 21);
+            this.label12.TabIndex = 104;
+            this.label12.Text = "Twin";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label13.Location = new System.Drawing.Point(12, 45);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(65, 21);
+            this.label13.TabIndex = 105;
+            this.label13.Text = "$3,000";
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label22.Location = new System.Drawing.Point(17, 48);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(65, 21);
+            this.label22.TabIndex = 107;
+            this.label22.Text = "$3,000";
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label23.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label23.Location = new System.Drawing.Point(17, 27);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(58, 21);
+            this.label23.TabIndex = 106;
+            this.label23.Text = "Twin";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label24.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label24.Location = new System.Drawing.Point(17, 48);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(65, 21);
+            this.label24.TabIndex = 107;
+            this.label24.Text = "$3,000";
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label25.Location = new System.Drawing.Point(17, 27);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(58, 21);
+            this.label25.TabIndex = 106;
+            this.label25.Text = "Twin";
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label26.Location = new System.Drawing.Point(12, 45);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(65, 21);
+            this.label26.TabIndex = 107;
+            this.label26.Text = "$3,000";
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label27.Location = new System.Drawing.Point(12, 24);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(58, 21);
+            this.label27.TabIndex = 106;
+            this.label27.Text = "Twin";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label28.Location = new System.Drawing.Point(18, 47);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(65, 21);
+            this.label28.TabIndex = 107;
+            this.label28.Text = "$3,000";
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label29.Location = new System.Drawing.Point(18, 26);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(58, 21);
+            this.label29.TabIndex = 106;
+            this.label29.Text = "Twin";
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label30.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label30.Location = new System.Drawing.Point(12, 48);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(65, 21);
+            this.label30.TabIndex = 107;
+            this.label30.Text = "$3,000";
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label31.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label31.Location = new System.Drawing.Point(12, 27);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(58, 21);
+            this.label31.TabIndex = 106;
+            this.label31.Text = "Twin";
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label32.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label32.Location = new System.Drawing.Point(15, 47);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(65, 21);
+            this.label32.TabIndex = 107;
+            this.label32.Text = "$3,000";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label33.Location = new System.Drawing.Point(15, 26);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(58, 21);
+            this.label33.TabIndex = 106;
+            this.label33.Text = "Twin";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label34.Location = new System.Drawing.Point(12, 48);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(65, 21);
+            this.label34.TabIndex = 107;
+            this.label34.Text = "$3,000";
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label35.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label35.Location = new System.Drawing.Point(12, 27);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(58, 21);
+            this.label35.TabIndex = 106;
+            this.label35.Text = "Twin";
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label36.Location = new System.Drawing.Point(18, 48);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(65, 21);
+            this.label36.TabIndex = 107;
+            this.label36.Text = "$3,000";
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label37.Location = new System.Drawing.Point(18, 27);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(58, 21);
+            this.label37.TabIndex = 106;
+            this.label37.Text = "Twin";
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label38.Location = new System.Drawing.Point(10, 47);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(65, 21);
+            this.label38.TabIndex = 107;
+            this.label38.Text = "$3,000";
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label40.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label40.Location = new System.Drawing.Point(10, 26);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(58, 21);
+            this.label40.TabIndex = 106;
+            this.label40.Text = "Twin";
+            // 
+            // label42
+            // 
+            this.label42.AutoSize = true;
+            this.label42.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label42.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label42.Location = new System.Drawing.Point(12, 44);
+            this.label42.Name = "label42";
+            this.label42.Size = new System.Drawing.Size(65, 21);
+            this.label42.TabIndex = 107;
+            this.label42.Text = "$2,000";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label43.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label43.Location = new System.Drawing.Point(12, 23);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(68, 21);
+            this.label43.TabIndex = 106;
+            this.label43.Text = "Single";
+            // 
+            // label44
+            // 
+            this.label44.AutoSize = true;
+            this.label44.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label44.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label44.Location = new System.Drawing.Point(10, 43);
+            this.label44.Name = "label44";
+            this.label44.Size = new System.Drawing.Size(65, 21);
+            this.label44.TabIndex = 109;
+            this.label44.Text = "$2,000";
+            // 
+            // label45
+            // 
+            this.label45.AutoSize = true;
+            this.label45.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label45.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label45.Location = new System.Drawing.Point(10, 22);
+            this.label45.Name = "label45";
+            this.label45.Size = new System.Drawing.Size(68, 21);
+            this.label45.TabIndex = 108;
+            this.label45.Text = "Single";
+            // 
+            // label46
+            // 
+            this.label46.AutoSize = true;
+            this.label46.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label46.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label46.Location = new System.Drawing.Point(10, 45);
+            this.label46.Name = "label46";
+            this.label46.Size = new System.Drawing.Size(65, 21);
+            this.label46.TabIndex = 109;
+            this.label46.Text = "$2,000";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label47.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label47.Location = new System.Drawing.Point(10, 24);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(68, 21);
+            this.label47.TabIndex = 108;
+            this.label47.Text = "Single";
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label48.Location = new System.Drawing.Point(12, 47);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(65, 21);
+            this.label48.TabIndex = 109;
+            this.label48.Text = "$2,000";
+            // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label49.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label49.Location = new System.Drawing.Point(12, 26);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(68, 21);
+            this.label49.TabIndex = 108;
+            this.label49.Text = "Single";
+            // 
+            // label50
+            // 
+            this.label50.AutoSize = true;
+            this.label50.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label50.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label50.Location = new System.Drawing.Point(12, 48);
+            this.label50.Name = "label50";
+            this.label50.Size = new System.Drawing.Size(65, 21);
+            this.label50.TabIndex = 109;
+            this.label50.Text = "$2,000";
+            // 
+            // label51
+            // 
+            this.label51.AutoSize = true;
+            this.label51.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label51.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label51.Location = new System.Drawing.Point(12, 27);
+            this.label51.Name = "label51";
+            this.label51.Size = new System.Drawing.Size(68, 21);
+            this.label51.TabIndex = 108;
+            this.label51.Text = "Single";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label52.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label52.Location = new System.Drawing.Point(4, 47);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(65, 21);
+            this.label52.TabIndex = 109;
+            this.label52.Text = "$2,000";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label53.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label53.Location = new System.Drawing.Point(4, 26);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(68, 21);
+            this.label53.TabIndex = 108;
+            this.label53.Text = "Single";
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label54.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label54.Location = new System.Drawing.Point(4, 45);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(65, 21);
+            this.label54.TabIndex = 109;
+            this.label54.Text = "$2,000";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label55.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label55.Location = new System.Drawing.Point(4, 24);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(68, 21);
+            this.label55.TabIndex = 108;
+            this.label55.Text = "Single";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label56.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label56.Location = new System.Drawing.Point(12, 45);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(65, 21);
+            this.label56.TabIndex = 109;
+            this.label56.Text = "$4,000";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label57.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label57.Location = new System.Drawing.Point(12, 24);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(79, 21);
+            this.label57.TabIndex = 108;
+            this.label57.Text = "Tripple";
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label58.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label58.Location = new System.Drawing.Point(9, 47);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(65, 21);
+            this.label58.TabIndex = 111;
+            this.label58.Text = "$4,000";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label59.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label59.Location = new System.Drawing.Point(9, 26);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(79, 21);
+            this.label59.TabIndex = 110;
+            this.label59.Text = "Tripple";
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label60.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label60.Location = new System.Drawing.Point(12, 48);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(65, 21);
+            this.label60.TabIndex = 111;
+            this.label60.Text = "$4,000";
+            // 
+            // label61
+            // 
+            this.label61.AutoSize = true;
+            this.label61.Font = new System.Drawing.Font("Century Schoolbook", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label61.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label61.Location = new System.Drawing.Point(12, 27);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(79, 21);
+            this.label61.TabIndex = 110;
+            this.label61.Text = "Tripple";
+            // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label62.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label62.Location = new System.Drawing.Point(17, 67);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(33, 19);
+            this.label62.TabIndex = 108;
+            this.label62.Text = "GF";
+            // 
+            // label63
+            // 
+            this.label63.AutoSize = true;
+            this.label63.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label63.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label63.Location = new System.Drawing.Point(12, 65);
+            this.label63.Name = "label63";
+            this.label63.Size = new System.Drawing.Size(33, 19);
+            this.label63.TabIndex = 109;
+            this.label63.Text = "GF";
+            // 
+            // label64
+            // 
+            this.label64.AutoSize = true;
+            this.label64.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label64.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label64.Location = new System.Drawing.Point(12, 65);
+            this.label64.Name = "label64";
+            this.label64.Size = new System.Drawing.Size(33, 19);
+            this.label64.TabIndex = 109;
+            this.label64.Text = "GF";
+            // 
+            // label65
+            // 
+            this.label65.AutoSize = true;
+            this.label65.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label65.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label65.Location = new System.Drawing.Point(11, 64);
+            this.label65.Name = "label65";
+            this.label65.Size = new System.Drawing.Size(33, 19);
+            this.label65.TabIndex = 110;
+            this.label65.Text = "GF";
+            // 
+            // label66
+            // 
+            this.label66.AutoSize = true;
+            this.label66.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label66.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label66.Location = new System.Drawing.Point(17, 68);
+            this.label66.Name = "label66";
+            this.label66.Size = new System.Drawing.Size(33, 19);
+            this.label66.TabIndex = 109;
+            this.label66.Text = "GF";
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label67.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label67.Location = new System.Drawing.Point(12, 68);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(33, 19);
+            this.label67.TabIndex = 110;
+            this.label67.Text = "GF";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label68.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label68.Location = new System.Drawing.Point(12, 66);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(47, 19);
+            this.label68.TabIndex = 109;
+            this.label68.Text = "1st F";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label69.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label69.Location = new System.Drawing.Point(11, 66);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(47, 19);
+            this.label69.TabIndex = 110;
+            this.label69.Text = "1st F";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label70.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label70.Location = new System.Drawing.Point(17, 68);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(47, 19);
+            this.label70.TabIndex = 110;
+            this.label70.Text = "1st F";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label71.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label71.Location = new System.Drawing.Point(12, 68);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(47, 19);
+            this.label71.TabIndex = 110;
+            this.label71.Text = "1st F";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label72.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label72.Location = new System.Drawing.Point(12, 68);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(47, 19);
+            this.label72.TabIndex = 110;
+            this.label72.Text = "1st F";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label73.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label73.Location = new System.Drawing.Point(11, 68);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(47, 19);
+            this.label73.TabIndex = 112;
+            this.label73.Text = "1st F";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label74.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label74.Location = new System.Drawing.Point(16, 68);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(53, 19);
+            this.label74.TabIndex = 110;
+            this.label74.Text = "2nd F";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label75.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label75.Location = new System.Drawing.Point(12, 68);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(53, 19);
+            this.label75.TabIndex = 111;
+            this.label75.Text = "2nd F";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label76.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label76.Location = new System.Drawing.Point(12, 68);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(53, 19);
+            this.label76.TabIndex = 111;
+            this.label76.Text = "2nd F";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label77.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label77.Location = new System.Drawing.Point(10, 68);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(53, 19);
+            this.label77.TabIndex = 111;
+            this.label77.Text = "2nd F";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label78.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label78.Location = new System.Drawing.Point(18, 65);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(53, 19);
+            this.label78.TabIndex = 111;
+            this.label78.Text = "2nd F";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label79.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label79.Location = new System.Drawing.Point(12, 65);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(53, 19);
+            this.label79.TabIndex = 112;
+            this.label79.Text = "2nd F";
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label80.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label80.Location = new System.Drawing.Point(10, 65);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(51, 19);
+            this.label80.TabIndex = 111;
+            this.label80.Text = "3rd F";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Century Schoolbook", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label81.ForeColor = System.Drawing.Color.DodgerBlue;
+            this.label81.Location = new System.Drawing.Point(9, 65);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(51, 19);
+            this.label81.TabIndex = 112;
+            this.label81.Text = "3rd F";
             // 
             // DashBoard
             // 
@@ -1748,6 +2549,67 @@
         private System.Windows.Forms.Label label41;
         private System.Windows.Forms.Label label39;
         private System.Windows.Forms.BindingSource guestBindingSource;
-        private System.Windows.Forms.TextBox roomnumtb;
+        private System.Windows.Forms.Label roomnumtb;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label60;
+        private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label50;
+        private System.Windows.Forms.Label label51;
+        private System.Windows.Forms.Label label46;
+        private System.Windows.Forms.Label label47;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label48;
+        private System.Windows.Forms.Label label49;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Label label44;
+        private System.Windows.Forms.Label label45;
+        private System.Windows.Forms.Label label42;
+        private System.Windows.Forms.Label label43;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.Label label66;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label64;
+        private System.Windows.Forms.Label label65;
+        private System.Windows.Forms.Label label63;
+        private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.Label label74;
+        private System.Windows.Forms.Label label75;
+        private System.Windows.Forms.Label label70;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.Label label72;
+        private System.Windows.Forms.Label label73;
+        private System.Windows.Forms.Label label71;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.Label label79;
     }
 }

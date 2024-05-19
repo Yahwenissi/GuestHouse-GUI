@@ -13,7 +13,7 @@ namespace GuestHouse_GUI
 {
     public partial class Customers : Form
     {
-        int track = 0;
+        int track = 0,roomnum=0;
        
     
         public Customers()
@@ -24,34 +24,34 @@ namespace GuestHouse_GUI
 
         void loadtable()
         {
+            showCustomers();
+            newCustomertbl.Rows.Clear();
+
             if (Program. guest != null && Program.guest.Length > track)
             {
-                newCustomertbl.Rows.Clear();
                 for (int i = 0; i < Program.guest.Length; i++)
                 {
                     if (Program.guest[i] != null && Program.guest[i].status == "pending")
                     {
-                        newCustomertbl.Rows.Add(Program.guest[i].FullName, Program.guest[i].Dob, Program.guest[i].Age, Program.guest[i].gender, Program.guest[i].PhoneNumber);
+                        newCustomertbl.Rows.Add(Program.guest[i].FullName, Program.guest[i].Dob, Program.guest[i].gender, Program.guest[i].PhoneNumber);
                     }
                 }
             }
         }
 
-        private void Customers_Load(object sender, EventArgs e)
-        {
-            loadtable();
-        }
+     
         SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         private void showCustomers()
         {
-            Con.Open();
-            string Query = "select * from GuestView";
-            SqlDataAdapter sda = new SqlDataAdapter(Query, Con);
-            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
-            var ds = new DataSet();
-            sda.Fill(ds);
-            CustomersDGV.DataSource = ds.Tables[0];
-            Con.Close();
+            CustomersDGV.Rows.Clear();
+            Booking curr = Program.list.Head;
+            while (curr != null)
+            {
+                if (curr.Guest != null)
+                    CustomersDGV.Rows.Add(curr.Guest.FullName, curr.Guest.Age,curr.Guest.Dob, curr.Guest.gender, curr.Guest.PhoneNumber,curr.Room.RoomNumber);
+                curr = curr.Next;
+            }
+
         }
         private void Reset()
         {
@@ -74,7 +74,7 @@ namespace GuestHouse_GUI
                     return;
                 }
 
-                Program.guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(), CusGenCb.SelectedItem.ToString());
+                Program.guest[track] = new Guest(CusNameTb.Text, CusPhoneTb.Text, CusDOB.Value.Date.ToString(), CusGenCb.Text);
                 track += 1;
              //   MessageBox.Show("Customer Saved");
                 loadtable();
@@ -83,35 +83,61 @@ namespace GuestHouse_GUI
 
         private void EditBtn_Click(object sender, EventArgs e)
         {
-            if (CusNameTb.Text == "" || CusPhoneTb.Text == "" || CusGenCb.SelectedIndex == -1)
+            DateTime dob;
+            if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString()||roomnum==0)
             {
                 MessageBox.Show("Missing Information");
             }
             else
             {
-           /*     try
+                Guest gue = new Guest();
+                if (CusNameTb.Text != "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString())
+                    gue.FullName = CusNameTb.Text;
+                if (CusNameTb.Text == "" && CusPhoneTb.Text != "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text == DateTime.Now.ToString())
+                    gue.PhoneNumber= CusPhoneTb.Text;
+                if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex != -1 && CusDOB.Text == DateTime.Now.ToString())
+                    gue.gender=CusGenCb.Text;
+                if (CusNameTb.Text == "" && CusPhoneTb.Text == "" && CusGenCb.SelectedIndex == -1 && CusDOB.Text != DateTime.Now.ToString())
+                    gue.Dob=CusDOB.Text;
+                 if (CusNameTb.Text != "" && CusPhoneTb.Text != "" && CusGenCb.SelectedIndex != -1 && CusDOB.Text != DateTime.Now.ToString())
                 {
-                    Con.Open();
-                    SqlCommand cmd = new SqlCommand("update CustomerTbl set CusName = @CN,CusPhone = @CP,CusGen = @CG ,CusDOB = @CD where CusId = @Ckey", Con);
-                    cmd.Parameters.AddWithValue("@CN", CusNameTb.Text);
-                    cmd.Parameters.AddWithValue("@CP", CusPhoneTb.Text);
-                    cmd.Parameters.AddWithValue("@CG", CusGenCb.SelectedItem.ToString());
-                    cmd.Parameters.AddWithValue("@CD", CusDOB.Value.Date);
-                    cmd.Parameters.AddWithValue("@Ckey", key);
-                    cmd.ExecuteNonQuery();
-                    MessageBox.Show("Customer Updated!");
-                    Con.Close();
-                    showCustomers();
-                    Reset();
+                    gue.FullName = CusNameTb.Text;
+                    gue.PhoneNumber = CusPhoneTb.Text;
+                    gue.gender = CusGenCb.Text;
+                   
+                    if (DateTime.TryParse(CusDOB.Text, out dob))
+                    {
+                        gue.Dob = dob.ToString("yyyy/MM/dd");
+                      
+                        gue.Age=CalculateAge(dob);
+                        
+                    }
+                    
+
+
 
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }*/
+
+
+                Program.list.ModifyGuest(gue,roomnum);
+                loadtable();
+                showCustomers();
             }
         }
+        public int CalculateAge(DateTime dob)
+        {
+            // Get the current date
+            DateTime currentDate = DateTime.Today;
 
+            // Calculate age
+            int age = currentDate.Year - dob.Year;
+
+            // Check if the birthday has passed this year
+            if (dob > currentDate.AddYears(-age))
+                age--;
+
+            return age;
+        }
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
       /*      if (key == 0)
@@ -192,6 +218,7 @@ namespace GuestHouse_GUI
             CusPhoneTb.Text = CustomersDGV.SelectedRows[0].Cells[4].Value.ToString();
             CusGenCb.Text = CustomersDGV.SelectedRows[0].Cells[3].Value.ToString();
             CusDOB.Text = CustomersDGV.SelectedRows[0].Cells[2].Value.ToString();
+            roomnum = int.Parse(CustomersDGV.SelectedRows[0].Cells[5].Value.ToString());
 
             if (CusNameTb.Text == "")
             {
@@ -201,6 +228,11 @@ namespace GuestHouse_GUI
             {
                 //      key = Convert.ToInt32(CustomersDGV.SelectedRows[0].Cells[0].Value.ToString());
             }
+        }
+
+        private void Customers_Load_1(object sender, EventArgs e)
+        {
+            loadtable();
         }
     }
 }

@@ -116,10 +116,11 @@ public class Guest
                         Guest guest = new Guest();
                         guest.FullName = reader.GetString(reader.GetOrdinal("Full Name"));
                         guest.PhoneNumber = reader.GetString(reader.GetOrdinal("Phone Number"));
-                        guest.CheckInDate = reader.GetDateTime(reader.GetOrdinal("Check In Date")).ToString("yyyy-MM-dd HH:mm:ss");
-                        guest.CheckOutDate = reader.GetDateTime(reader.GetOrdinal("Check Out Date")).ToString("yyyy-MM-dd HH:mm:ss");
+                        guest.CheckInDate = reader.GetDateTime(reader.GetOrdinal("Check In Date")).ToString("yyyy-MM-dd ");
+                        guest.CheckOutDate = reader.GetDateTime(reader.GetOrdinal("Check Out Date")).ToString("yyyy-MM-dd ");
                         guest.gender = reader.GetString(reader.GetOrdinal("Gender"));
                         guest.Age = reader.GetInt32(reader.GetOrdinal("Age"));
+                    guest.Dob = reader.GetDateTime(reader.GetOrdinal("Date Of Birth")).ToString("yyyy-MM-dd");
 
                         string bookdate = reader.GetDateTime(reader.GetOrdinal("Book Date")).ToString("yyyy-MM-dd HH:mm:ss");
                         double totalprice = (double)reader.GetDecimal(reader.GetOrdinal("Total Price"));
@@ -175,7 +176,7 @@ public class Guest
                     // Add parameters
                     command.Parameters.AddWithValue("@Gname", book.Guest.FullName);
                     command.Parameters.AddWithValue("@GDOB", book.Guest.Dob);
-                    command.Parameters.AddWithValue("@Ggender", book.Guest.Dob);
+                    command.Parameters.AddWithValue("@Ggender", book.Guest.gender);
                     command.Parameters.AddWithValue("@Gphone", book.Guest.PhoneNumber);
                     command.Parameters.AddWithValue("@Gcheckindate", book.Guest.CheckInDate);
                     command.Parameters.AddWithValue("@Gcheckoutdate", book.Guest.CheckOutDate);
@@ -194,7 +195,7 @@ public class Guest
                 connection.Close();
             }
         }
-        public void ModifyBooking(Booking book)
+        public void ModifyGuest(Booking book)
         {
             connection = new SqlConnection(connectionString);
             try
@@ -205,10 +206,10 @@ public class Guest
 
                     // Add parameters
                     command.Parameters.AddWithValue("@name", book.Guest.FullName);
-                    command.Parameters.AddWithValue("@age", book.Guest.Age);
+                    command.Parameters.AddWithValue("@DOB", DateTime.Parse(book.Guest.Dob));
                     command.Parameters.AddWithValue("@phone", book.Guest.PhoneNumber);
-                    command.Parameters.AddWithValue("@Gcheckindate", book.Guest.CheckInDate);
-                    command.Parameters.AddWithValue("@Gcheckoutdate", book.Guest.CheckOutDate);
+/*                    command.Parameters.AddWithValue("@Gcheckindate", book.Guest.CheckInDate);
+                    command.Parameters.AddWithValue("@Gcheckoutdate", book.Guest.CheckOutDate);*/
                     command.Parameters.AddWithValue("@roomnum", book.Room.RoomNumber);
 
                     connection.Open();
@@ -619,7 +620,7 @@ public class Guest
             return true;
         }
 
-        public void ModifyBooking(Guest guest, double? total = null, int? roomNumber = null, string oldname = null)
+        public void ModifyGuest(Guest guest, int roomNumber , double? total = null)
         {
             Booking current = head;
             bool found = false;
@@ -627,25 +628,29 @@ public class Guest
             while (current != null)
             {
                 if (current.Guest != null && current.Room.RoomNumber == roomNumber)
+               
                 {
                     // Update booking information only if parameters are not null
                     if (!string.IsNullOrEmpty(guest.FullName))
                         current.Guest.FullName = guest.FullName;
                     if (!string.IsNullOrEmpty(guest.PhoneNumber))
                         current.Guest.PhoneNumber = guest.PhoneNumber;
-                    if (!string.IsNullOrEmpty(guest.CheckInDate))
-                        current.Guest.CheckInDate = guest.CheckInDate;
-                    if (!string.IsNullOrEmpty(guest.CheckOutDate))
-                        current.Guest.CheckOutDate = guest.CheckOutDate;
-                    if (guest.Age.HasValue)
-                        current.Guest.Age = guest.Age;
-                    if (total.HasValue)
-                        current.TotalPrice = total;
+                    if (!string.IsNullOrEmpty(guest.Dob))
+                    current.Guest.Dob = guest.Dob;
+                if (guest.Age.HasValue)
+                    current.Guest.Age = guest.Age;
+                /*     if (!string.IsNullOrEmpty(guest.CheckInDate))
+                         current.Guest.CheckInDate = guest.CheckInDate;
+                     if (!string.IsNullOrEmpty(guest.CheckOutDate))
+                         current.Guest.CheckOutDate = guest.CheckOutDate;
 
-                    found = true;
+                     if (total.HasValue)
+                         current.TotalPrice = total;*/
+
+                found = true;
 
                     // Update database with modified booking
-                    Db.ModifyBooking(current);
+                    Db.ModifyGuest(current);
 
                     break;
                 }
@@ -655,11 +660,12 @@ public class Guest
 
             if (!found)
             {
-                Console.WriteLine("Booking not found.");
+                Console.WriteLine("Guest not found.");
+            MessageBox.Show("Guest not found!");
             }
             else
             {
-                Console.WriteLine("Booking updated successfully.");
+                Console.WriteLine("Guest updated successfully.");
             }
         }
 

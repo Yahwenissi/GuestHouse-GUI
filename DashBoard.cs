@@ -25,7 +25,9 @@ namespace GuestHouse_GUI
           //  CountBooking();
          //   GetCustomer();
             bookedcheck();
-           
+            roomnumtb.Text = "0";
+
+
         }
         void populatenamecombo()
         {
@@ -41,10 +43,6 @@ namespace GuestHouse_GUI
            
         }
 
-        private void R1_Paint(object sender, PaintEventArgs e)
-        {
-            roomnumtb.Text = 1.ToString();
-        }
 
         SqlConnection Con = new SqlConnection(@"Data Source=RAFA;Initial Catalog=GuestHouse;Integrated Security=True");
         int free, Booked;
@@ -101,26 +99,25 @@ namespace GuestHouse_GUI
         
         }
         
-        int RoomNumber = 0;
-      
-        
-        string RType;
-        int RC;
+
        
        
         private void Reset()
         {
             CusNameCb.Text = "";
             CusNumofDaysTb.Text = "";
-            RoomNumber = 0;
-            roomnumtb.Text = string.Empty;
+           
+            roomnumtb.Text = "0";
+            CountCustomers();
+            CountBooked();
+            populatenamecombo();
         }
        
         private void BookBtn_Click(object sender, EventArgs e)
         {
             Guest singleguest=null;
 
-            if (CusNumofDaysTb.Text == "" || RoomNumber == 0||CusNameCb.Text=="")
+            if (CusNumofDaysTb.Text == "" || roomnumtb.Text == "0"||CusNameCb.Text=="")
             {
                 MessageBox.Show("Select a Room and a Customer");
             } else
@@ -142,11 +139,11 @@ namespace GuestHouse_GUI
                 try
                 {
                     
-                    Program.list.AddBooking(RoomNumber,singleguest, Program.list.getPrice(RoomNumber) * int.Parse(CusNumofDaysTb.Text));
+                    Program.list.AddBooking(int.Parse(roomnumtb.Text), singleguest, Program.list.getPrice(int.Parse(roomnumtb.Text)) * int.Parse(CusNumofDaysTb.Text));
                     for (int i=0;i< Program.guest.Length;i++)
                     {
 
-                        if (Program.guest[i].FullName==singleguest.FullName)
+                        if (Program.guest[i]!=null&&Program.guest[i].FullName==singleguest.FullName)
                         {
                             Program.guest[i] = null;
 
@@ -519,6 +516,11 @@ namespace GuestHouse_GUI
         private void R20lbl_Click(object sender, EventArgs e)
         {
             roomnumtb.Text=20.ToString();
+        }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Reset();
         }
 
         private void Panel1_Paint(object sender, PaintEventArgs e)

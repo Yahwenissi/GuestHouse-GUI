@@ -35,7 +35,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Bookings));
             this.panel2 = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
-            this.Roomnumcb = new System.Windows.Forms.ComboBox();
             this.bookdelbtn = new Guna.UI2.WinForms.Guna2Button();
             this.label7 = new System.Windows.Forms.Label();
             this.nametb = new System.Windows.Forms.TextBox();
@@ -74,6 +73,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.Roomnumcb = new System.Windows.Forms.TextBox();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BookingDGV)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -91,8 +91,8 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.White;
-            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.Roomnumcb);
+            this.panel2.Controls.Add(this.label8);
             this.panel2.Controls.Add(this.bookdelbtn);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.nametb);
@@ -107,24 +107,11 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.White;
             this.label8.Font = new System.Drawing.Font("Bradley Hand ITC", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(361, 261);
+            this.label8.Location = new System.Drawing.Point(347, 261);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(142, 25);
             this.label8.TabIndex = 150;
             this.label8.Text = "Room Number";
-            // 
-            // Roomnumcb
-            // 
-            this.Roomnumcb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold);
-            this.Roomnumcb.FormattingEnabled = true;
-            this.Roomnumcb.Items.AddRange(new object[] {
-            "Basic",
-            "Standard",
-            "VIP"});
-            this.Roomnumcb.Location = new System.Drawing.Point(509, 254);
-            this.Roomnumcb.Name = "Roomnumcb";
-            this.Roomnumcb.Size = new System.Drawing.Size(166, 32);
-            this.Roomnumcb.TabIndex = 149;
             // 
             // bookdelbtn
             // 
@@ -540,6 +527,14 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
+            // Roomnumcb
+            // 
+            this.Roomnumcb.Font = new System.Drawing.Font("Book Antiqua", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Roomnumcb.Location = new System.Drawing.Point(506, 256);
+            this.Roomnumcb.Name = "Roomnumcb";
+            this.Roomnumcb.Size = new System.Drawing.Size(93, 32);
+            this.Roomnumcb.TabIndex = 151;
+            // 
             // Bookings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -617,7 +612,6 @@
         private Guna.UI2.WinForms.Guna2DataGridView BookingDGV;
         private Guna.UI2.WinForms.Guna2Button bookdelbtn;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox Roomnumcb;
         private System.Windows.Forms.DataGridViewTextBoxColumn FullName;
         private System.Windows.Forms.DataGridViewTextBoxColumn Age;
         private System.Windows.Forms.DataGridViewTextBoxColumn Gender;
@@ -628,5 +622,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Roomtype;
         private System.Windows.Forms.DataGridViewTextBoxColumn Floor;
         private System.Windows.Forms.DataGridViewTextBoxColumn TotalPrice;
+        private System.Windows.Forms.TextBox Roomnumcb;
     }
 }
