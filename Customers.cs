@@ -214,19 +214,24 @@ namespace GuestHouse_GUI
 
         private void CustomersDGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            CusNameTb.Text = CustomersDGV.SelectedRows[0].Cells[0].Value.ToString();
-            CusPhoneTb.Text = CustomersDGV.SelectedRows[0].Cells[4].Value.ToString();
-            CusGenCb.Text = CustomersDGV.SelectedRows[0].Cells[3].Value.ToString();
-            CusDOB.Text = CustomersDGV.SelectedRows[0].Cells[2].Value.ToString();
-            roomnum = int.Parse(CustomersDGV.SelectedRows[0].Cells[5].Value.ToString());
+            try
+            {
+                if (CustomersDGV.Rows.Count > 0)
+                {
+                   // MessageBox.Show("List is Empty!");
+                }
+                else
+                {
+                    CusNameTb.Text = CustomersDGV.SelectedRows[0].Cells[0].Value.ToString();
+                    CusPhoneTb.Text = CustomersDGV.SelectedRows[0].Cells[4].Value.ToString();
+                    CusGenCb.Text = CustomersDGV.SelectedRows[0].Cells[3].Value.ToString();
+                    CusDOB.Text = CustomersDGV.SelectedRows[0].Cells[2].Value.ToString();
+                    roomnum = int.Parse(CustomersDGV.SelectedRows[0].Cells[5].Value.ToString());
 
-            if (CusNameTb.Text == "")
+                }
+            }catch(NullReferenceException ex)
             {
-                //     key = 0;
-            }
-            else
-            {
-                //      key = Convert.ToInt32(CustomersDGV.SelectedRows[0].Cells[0].Value.ToString());
+                MessageBox.Show("List is Empty!");
             }
         }
 

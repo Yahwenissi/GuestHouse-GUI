@@ -82,9 +82,14 @@ namespace GuestHouse_GUI
 
         private void BookingDGV_CellMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-          nametb.Text = BookingDGV.SelectedRows[0].Cells[0].Value.ToString(); 
-         Roomnumcb.Text = BookingDGV.SelectedRows[0].Cells[6].Value.ToString(); 
-        }
+            try {
+                nametb.Text = BookingDGV.SelectedRows[0].Cells[0].Value.ToString();
+                Roomnumcb.Text = BookingDGV.SelectedRows[0].Cells[6].Value.ToString();
+            }catch(ArgumentOutOfRangeException ex)
+            {
+
+            }
+            }
 
         private void bookdelbtn_Click(object sender, EventArgs e)
         {
@@ -95,6 +100,13 @@ namespace GuestHouse_GUI
                 Program.list.DeleteBooking(int.Parse(Roomnumcb.Text),nametb.Text);
                 showBookings();
             }
+        }
+
+        private void guna2Button2_Click(object sender, EventArgs e)
+        {
+            Program.list.DeleteAllBookings();
+            showBookings();
+
         }
     }
 }

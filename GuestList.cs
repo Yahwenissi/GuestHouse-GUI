@@ -468,28 +468,33 @@ public class Guest
             }
         }
 
-        public void DeleteAllBookings()
+    public void DeleteAllBookings()
+    {
+        Booking current = head;
+
+        DialogResult result = MessageBox.Show("Are you sure you want to delete all bookings?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+
+        if (result == DialogResult.Yes)
         {
-            Booking current = head;
-
-            Console.WriteLine("Are You Sure Deleting All Bookings?");
-            yesorno = Console.ReadKey();
-            if (yesorno.KeyChar == 'y')
+            while (current != null)
             {
-                while (current != null)
-                {
-                    current.Guest = null;
-                    current.Room.Status = "available";
-                    current = current.Next;
-                }
-
-                totalBooking = 0;
-                Db.DeleteAllBookings();
-                Console.WriteLine("All bookings deleted successfully.");
+                current.Guest = null; 
+                current.Room.Status = "available"; 
+                current = current.Next; 
             }
-            else return;
+
+            totalBooking = 0; 
+            Db.DeleteAllBookings(); 
+            MessageBox.Show("All bookings deleted successfully.", "Deletion Complete", MessageBoxButtons.OK, MessageBoxIcon.Information); // Confirm deletion
         }
-        public void DisplayAvailable(int? roomnum = null, string type = null)
+        else
+        {
+            // If user did not confirm, return without deleting anything
+            MessageBox.Show("Deletion of all bookings was cancelled.", "Deletion Cancelled", MessageBoxButtons.OK, MessageBoxIcon.Information); // Inform user
+            return;
+        }
+    }
+    public void DisplayAvailable(int? roomnum = null, string type = null)
         {
             Booking curr = head;
 
