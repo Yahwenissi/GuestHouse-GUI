@@ -64,6 +64,7 @@ public class Guest
         public Room Room;
 
         public Guest Guest;
+
         public string BookingDate;
         public double? TotalPrice;
         public Booking Next, Prev;
@@ -123,7 +124,7 @@ public class Guest
                         guest.Age = reader.GetInt32(reader.GetOrdinal("Age"));
                     guest.Dob = reader.GetDateTime(reader.GetOrdinal("Date Of Birth")).ToString("yyyy-MM-dd");
 
-                        string bookdate = reader.GetDateTime(reader.GetOrdinal("Book Date")).ToString("yyyy-MM-dd HH:mm:ss");
+                        string bookdate = reader.GetDateTime(reader.GetOrdinal("Book Date")).ToString("yyyy-MM-dd ");
                         double totalprice = (double)reader.GetDecimal(reader.GetOrdinal("Total Price"));
                         list.AddTolist(room, guest, bookdate, totalprice);
                     }
@@ -272,11 +273,12 @@ public class Guest
     public class LinkedList
     {
         private Booking head, tail;
-        public Booking Head { get { return head; } }
+       
+    public Booking Head { get { return head; } }
+
         private int totalBooking = 0, totalRoom = 0;
         public int TotalBooking { get { return totalBooking; } set { TotalBooking = value; } }
         public int TotalRoom { get { return totalRoom; } set { totalRoom = value; } }
-        private ConsoleKeyInfo yesorno;
 
         public Database Db = new Database();
 
@@ -427,10 +429,9 @@ public class Guest
         }
         public void DeleteBooking(int? roomnum = null, string name = null)
         {
+        
         DialogResult result = MessageBox.Show("Are you sure you want to delete this booking?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-       
-
-            if (result== DialogResult.No)
+           if (result== DialogResult.No)
                 return;
 
 
@@ -495,7 +496,7 @@ public class Guest
             return;
         }
     }
-    public void DisplayAvailable(int? roomnum = null, string type = null)
+    public void DisplayAvailable(int? roomnum = null)
         {
             Booking curr = head;
 
@@ -559,11 +560,13 @@ public class Guest
                         {
                             Console.WriteLine("Room " + roomNumber + " is Available.");
                             DisplayAvailable(curr.Room.RoomNumber);
+                       
 
                         }
                         else
                         {
                             Console.WriteLine("Room " + roomNumber + " is not Available.");
+                        
                         }
                         break;
                     }
@@ -579,6 +582,7 @@ public class Guest
                         if (curr.Room.Status == "available")
                         {
                             DisplayAvailable(curr.Room.RoomNumber);
+                       
 
                         }
 
@@ -594,26 +598,10 @@ public class Guest
             }
         }
 
-        public string getName(int roomnum)
-        {
-            Booking current = head;
-
-            while (current != null)
-            {
-                if (current.Room.RoomNumber == roomnum)
-                    return current.Guest.FullName;
-
-                current = current.Next;
-            }
-
-
-            return null;
-
-        }
+ 
 
         public bool Isbooked(int roomnumber)
         {
-
 
             Booking current = head;
             while (current != null)

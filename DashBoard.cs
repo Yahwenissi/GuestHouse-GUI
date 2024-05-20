@@ -78,23 +78,61 @@ namespace GuestHouse_GUI
             string Status = "occupied";
             if (Program.list != null)
             {
-                free = 20 - Program.list.TotalBooking;
-                Booked = Program.list.TotalBooking;
-                BPer = (Booked / 20) * 100;
-                FreePer = (free / 20) * 100;
-                BLbl.Text = Booked + " Booked Rooms";//Number of booked rooms(booked label)
-                AVllbl.Text = free + " Free Rooms";//NUmber of free rooms(availible label)
-                AvLbl1.Text = free + "";//this shows the number of free rooms from the freeRoomsProgressbar
-                BProgress.Value = BPer;//shows the progress bar amount for booked spaces
-                AVLProgress.Value = FreePer;//shows the progress bar amount for free spaces
-                FreeRoomsProgress.Value = FreePer;//shows the progress bar amount of the of free spaces left
+                int totalRooms = 20;
+                int booked = Program.list.TotalBooking;
+                int free = totalRooms - booked;
+
+                // Ensure calculations use floating-point division
+                double bookedPercentage = ((double)booked / totalRooms) * 100;
+                double freePercentage = ((double)free / totalRooms) * 100;
+
+                // Custom clamp function
+                int Clamp(int value, int min, int max)
+                {
+                    if (value < min) return min;
+                    if (value > max) return max;
+                    return value;
+                }
+
+                // Debug output
+                Console.WriteLine($"Booked: {booked}, Free: {free}");
+                Console.WriteLine($"Booked Percentage: {bookedPercentage}, Free Percentage: {freePercentage}");
+
+                // Update labels
+                BLbl.Text = booked + " Booked Rooms"; // Number of booked rooms (booked label)
+                AVllbl.Text = free + " Free Rooms"; // Number of free rooms (available label)
+                AvLbl1.Text = free.ToString(); // Shows the number of free rooms from the FreeRoomsProgressbar
+
+                // Ensure the progress bar values are within valid ranges (0 to 100)
+                int clampedBookedPercentage = Clamp((int)bookedPercentage, 0, 100);
+                int clampedFreePercentage = Clamp((int)freePercentage, 0, 100);
+
+                // Debug output for clamped values
+                Console.WriteLine($"Clamped Booked Percentage: {clampedBookedPercentage}, Clamped Free Percentage: {clampedFreePercentage}");
+
+                // Update progress bars
+                BProgress.Value = clampedBookedPercentage; // Shows the progress bar amount for booked spaces
+                AVLProgress.Value = clampedFreePercentage; // Shows the progress bar amount for free spaces
+                FreeRoomsProgress.Value = clampedFreePercentage; // Shows the progress bar amount of the free spaces left
+
+                // Refresh the UI if necessary
+                BProgress.Refresh();
+                AVLProgress.Refresh();
+                FreeRoomsProgress.Refresh();
+                if (Program.list != null)
+                    BookedLbl.Text = Program.list.TotalBooking.ToString() + " Bookings";
             }
+            else
+            {
+                Console.WriteLine("Program.list is null.");
+            }
+
+
         }
         private void CountCustomers()
         { 
            
-            if(Program.list!=null)
-            CustNumLbl.Text = Program.list.TotalBooking.ToString() + " Customers";
+            
             
         
         }
